@@ -1,10 +1,21 @@
 ﻿# mwSkinNaturkunde
 A Mediawiki skin developed at Museum für Naturkunde Berlin
 
+## Features
+ * adaptive
+ * supports sematic mediawiki and semantic forms
+ * uses PHP as its templating engine
+
+## Open issues
+ * Tools menu currently on the top navigation bar will be moved to the sidebar.
+ * Links in the sidebar will be moved close together.
+ * Top navigation bar will be integrated in the page, as it is currently conflicting with page anchor links.
+
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
 
 ## Dependencies
+### Font awesome toolkit
 Depends on Font Awesome toolkit by Dave Gandy.
 Please get Font Awesome from http://fontawesome.io
 Place the font-awesome folder containing css, font, less and scss into the naturkunde folder.
@@ -21,6 +32,11 @@ skins/
 --------------js/
 --------------templates/
 ```
+
+### Categorytree extension
+For enhanced usability,please install the categorytree mediawiki extension:
+http://www.mediawiki.org/wiki/Extension:CategoryTree
+
 ## Licenses
 Naturkunde - Mediawiki skin for Museum fuer Naturkunde Berlin
 Copyright 2014 Museum fuer Naturkunde Berlin
