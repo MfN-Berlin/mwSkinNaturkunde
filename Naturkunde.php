@@ -190,19 +190,13 @@ class NaturkundeTemplate extends BaseTemplate {
 					}
 					break;
 					
-				case 'Navigation':
-				break;
-				
-				case 'navigation':
-				break;
-
 				# Portal Drucken: nur Druckversion ist sichtbar - andere Links sind vorübergehend in main.css ausgeschaltet.
 				case 'coll-print_export':
 					$this->renderPortal( $name, $content );
 				break;
 				
 				default:
-				$this->renderPortal( $name, $content );
+					$this->renderPortal( $name, $content );
 				break;
 			}
 			
@@ -222,7 +216,6 @@ class NaturkundeTemplate extends BaseTemplate {
 		if ( $msg === null ) {
 			$msg = $name;
 		}
-				
 		echo '<ul class="nav nav-list Neverland">';
 			$id = Sanitizer::escapeId( "p-$name" );
 			$tooltip = Linker::tooltip( 'p-' . $name );

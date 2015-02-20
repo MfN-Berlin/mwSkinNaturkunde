@@ -3338,12 +3338,13 @@ button.close {
 .nav > li {
   position: relative;
   display: block;
+  margin-top: 7px;
 }
 
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 3px 15px;
 }
 
 .nav > li > a:hover,
@@ -3788,7 +3789,7 @@ button.close {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #999999;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -3918,13 +3919,14 @@ button.close {
 
 .navbar-fixed-top.Neverland .nav li,
 .navbar-static-top.Neverland .nav li {
-  margin-top: 2px;
+  margin-top: 10px;
   margin-bottom: 2px;
 }
 
 /* MENU OBEN RECHTS */
 .navbar-fixed-top.Neverland .nav li a,
-.navbar-static-top.Neverland .nav li a {
+.navbar-static-top.Neverland .nav li a,
+.navbar-nav li a {
   padding-top: 0;
   padding-right: 7px;
   padding-bottom: 0;
@@ -6205,10 +6207,6 @@ td.visible-print {
   color: #222222;
 }
 
-.nav-list.Neverland > li > a {
-  padding: 10px;
-}
-
 .nav-list.Neverland > li > a h3,
 .nav-list.Neverland > li > a small {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -6781,3 +6779,4 @@ table.aufgaben .CategoryTreeBullet {
 .portlet .smwtticon {
 	display: none; /* Don't display warnings in portlets */
 } 
+
