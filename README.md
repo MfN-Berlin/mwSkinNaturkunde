@@ -6,11 +6,6 @@ A Mediawiki skin developed at Museum für Naturkunde Berlin
  * supports sematic mediawiki and semantic forms
  * uses PHP as its templating engine
 
-## Open issues
- * Tools menu currently on the top navigation bar will be moved to the sidebar.
- * Links in the sidebar will be moved close together.
- * Top navigation bar will be integrated in the page, as it is currently conflicting with page anchor links.
-
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
 
@@ -34,7 +29,7 @@ skins/
 ```
 
 ### Categorytree extension
-For enhanced usability,please install the categorytree mediawiki extension:
+For enhanced usability, please install the categorytree mediawiki extension:
 http://www.mediawiki.org/wiki/Extension:CategoryTree
 
 ## Licenses
