@@ -9,7 +9,7 @@ Depends on Font Awesome toolkit by Dave Gandy.
 Please get Font Awesome from http://fontawesome.io
 Place the font-awesome folder containing css, font, less and scss into the naturkunde folder.
 Your folder structure should look like this:
-
+```
 skins/
 ----naturkunde/
 --------------css/
@@ -20,7 +20,7 @@ skins/
 --------------------------scss/
 --------------js/
 --------------templates/
-
+```
 ## Licenses
 Naturkunde - Mediawiki skin for Museum fuer Naturkunde Berlin
 Copyright 2014 Museum fuer Naturkunde Berlin
