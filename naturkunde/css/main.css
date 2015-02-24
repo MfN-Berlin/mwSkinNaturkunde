@@ -3972,6 +3972,22 @@ button.close {
   color: #636363;
 }
 
+/* Footer links */
+
+#footer-places a {
+  padding-top: 0;
+  padding-right: 7px;
+  padding-bottom: 0;
+  padding-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 8px;
+  color: #00407A;
+  text-shadow: none;
+  -webkit-transition: none;
+  transition: none-out;
+}
+
 .navbar-inverse {
   color: #fafafa;
 /*  text-shadow: 0px 0px 4px #2e3436;
