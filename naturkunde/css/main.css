@@ -3424,6 +3424,7 @@ button.close {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
+  min-height: 34px;
 }
 
 .nav-tabs.nav-justified {
