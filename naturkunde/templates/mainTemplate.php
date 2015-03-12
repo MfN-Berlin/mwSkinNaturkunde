@@ -9,7 +9,7 @@ include self::$templatePath . "/header.php";
 		<!-- panel -->
 		<aside class="col col-lg-3 noprint" id="widget-area" >
 		<!-- logo -->
-		<a href="<?php $this->mainPageURL?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/></a>
+		<a href="<?php $this->data['variant_urls'][0]?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/></a>
 		<!-- /logo -->
 		<?php
 		// SEARCH
