@@ -1,7 +1,7 @@
 /*!
  * Naturkunde - Theming for Museum fuer Naturkunde Berlin
  * Copyright 2014 Museum fuer Naturkunde Berlin
- * Licence has yet to be worked out
+ * Licensed under the Apache License v2.0
  *
  * based on Bootstrap by
  * Copyright 2013 Twitter, Inc
@@ -298,6 +298,7 @@ table {
   .table th {
     background-color: #fff !important;
     padding: 2px;
+    text-align: left;
   }
   .btn > .caret,
   .dropup > .btn > .caret {

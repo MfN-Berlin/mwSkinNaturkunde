@@ -134,7 +134,8 @@ class NaturkundeTemplate extends BaseTemplate {
 		$this->data['namespace_urls'] = $nav['namespaces'];
 		$this->data['view_urls'] = $nav['views'];
 		$this->data['action_urls'] = $nav['actions'];
-		$this->data['variant_urls'] = $nav['variants'];		
+		$this->data['variant_urls'] = $nav['variants'];
+		$this->mainPageURL = $this->data['nav_urls']['mainpage']['href'];
 	}
 	
 	/** 
