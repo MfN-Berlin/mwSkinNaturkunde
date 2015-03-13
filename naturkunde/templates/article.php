@@ -65,7 +65,7 @@
 		if ( $category == 'info' ):
 			?>
 			<br />
-			<div class="page-info">
+			<div class="page-info" id="page-info">
 			<?php foreach( $links as $link ): ?>
 			<?php $this->html( $link ) ?>
 			<?php endforeach; ?>
