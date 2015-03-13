@@ -135,7 +135,14 @@ class NaturkundeTemplate extends BaseTemplate {
 		$this->data['view_urls'] = $nav['views'];
 		$this->data['action_urls'] = $nav['actions'];
 		$this->data['variant_urls'] = $nav['variants'];
-		$this->mainPageURL = $this->data['nav_urls']['mainpage']['href'];
+		$this->data['main_page_url'] = $this->data['nav_urls']['mainpage']['href'];
+	}
+
+	/**
+	 * Returns the URL of the Main Page
+	 */
+	protected function getMainPageUrl() {
+		return $this->data['nav_urls']['mainpage']['href'];
 	}
 	
 	/** 
@@ -200,8 +207,6 @@ class NaturkundeTemplate extends BaseTemplate {
 					$this->renderPortal( $name, $content );
 				break;
 			}
-			
-			echo "\n<!-- /{$name} -->\n";
 		}
 	}
 	
