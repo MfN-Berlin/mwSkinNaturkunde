@@ -166,9 +166,6 @@ class NaturkundeTemplate extends BaseTemplate {
 	 */
 	protected function renderPortals( $portals ) {
 		// Force the rendering of the following portals
-		if ( !isset( $portals['SEARCH'] ) ) {
-			$portals['SEARCH'] = true;
-		}
 		
 		if ( !isset( $portals['TOOLBOX'] ) ) {
 			$portals['TOOLBOX'] = true;
@@ -183,13 +180,11 @@ class NaturkundeTemplate extends BaseTemplate {
 			if ( $content === false ) continue;
 		
 			switch( $name ) {
+				// Search is rendered in the naturkunde.php template
 				case 'SEARCH':
 					break;
 				
 				case 'TOOLBOX':
-					if ( $this->data[ 'loggedin' ] ) { # Only render Tools if Logged in
-						$this->renderPortal( 'tb', $this->getToolbox(), 'toolbox', 'SkinTemplateToolboxEnd' );
-					}
 					break;
 				
 				case 'LANGUAGES':
@@ -198,9 +193,7 @@ class NaturkundeTemplate extends BaseTemplate {
 					}
 					break;
 					
-				# Portal Drucken: nur Druckversion ist sichtbar - andere Links sind vorübergehend in main.css ausgeschaltet.
 				case 'coll-print_export':
-					$this->renderPortal( $name, $content );
 				break;
 				
 				default:
@@ -208,6 +201,24 @@ class NaturkundeTemplate extends BaseTemplate {
 				break;
 			}
 		}
+		
+		// render toolbox and print at the bottom
+		foreach ( $portals as $name => $content ) {
+			if ( $content === false ) continue;
+			switch( $name ) {
+				case 'TOOLBOX':
+					if ( $this->data[ 'loggedin' ] ) { # Only render Tools if Logged in
+						$this->renderPortal( 'tb', $this->getToolbox(), 'toolbox', 'SkinTemplateToolboxEnd' );
+					}
+					break;
+		
+				# Print: only "print version" is visible. Other links are hidden in main.css.
+				case 'coll-print_export':
+					$this->renderPortal( $name, $content );
+					break;
+		
+			}
+		}		
 	}
 	
 	/**
