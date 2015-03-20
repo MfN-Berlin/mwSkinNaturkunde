@@ -6581,6 +6581,10 @@ a.CategoryTreeLabelPage:HOVER {
 	text-decoration: underline;
 }
 
+.CategoryTreeToggle span {
+	color: #0068C6;
+}
+
 /*Hide the default editor*/
 /*
 .wikiEditor-ui .wikiEditor-ui-top {

@@ -227,7 +227,7 @@ class NaturkundeTemplate extends BaseTemplate {
 			$tooltip = Linker::tooltip( 'p-' . $name );
 			$msgObj = wfMessage( $msg );
 			$title = htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $msg );
-			echo sprintf ( "<h3 class='align-center id='%s' %s >%s</h3>", $id, $tooltip, $title );
+			echo sprintf ( "<h3 class='align-center' id='%s' %s >%s</h3>", $id, $tooltip, $title );
 		
 			if ( is_array( $content ) ) {
 				foreach( $content as $key => $val ) {

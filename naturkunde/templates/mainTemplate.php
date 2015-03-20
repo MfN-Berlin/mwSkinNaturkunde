@@ -14,11 +14,11 @@ include self::$templatePath . "/header.php";
 		<?php
 		// SEARCH
 		include self::$templatePath . "/search.php";
+		$this->renderPortals( $this->data[ 'sidebar' ] );
 		// VARIANTS
 		if ( count( $this->data['variant_urls'] ) > 0 ) {
 			include self::$templatePath . "/variants.php";
 		}
-		$this->renderPortals( $this->data[ 'sidebar' ] );
 		?>
 		</aside>
 		<section role="main" id="page" class="col col-lg-9">
