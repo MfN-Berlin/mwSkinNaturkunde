@@ -6281,11 +6281,6 @@ td.visible-print {
   margin: 1em auto;
 }
 
-#p-tb {
-	text-align: left !important;
-	padding-left: 15px;
-}
-
 .affix {
   position: relative;
   margin-bottom: 1em;
@@ -6579,6 +6574,10 @@ a.CategoryTreeLabelPage {
 
 a.CategoryTreeLabelPage:HOVER {
 	text-decoration: underline;
+}
+
+.CategoryTreeToggle span {
+	color: #0068C6;
 }
 
 /*Hide the default editor*/
