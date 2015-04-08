@@ -58,17 +58,64 @@ class SkinNaturkunde extends SkinTemplate {
 	}
 	
 	/**
-	 * Load skin and user CSS files in the correct order
+	 * Load skin and user CSS files (in the correct order)
 	 * 
 	 * @param $out OutputPage object
 	 */
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
-		// Append to the default screen common & print styles...
-		$out->addHeadItem('naturkunde_css', "
-			<link href='" . $GLOBALS['wgStylePath'] . "/naturkunde/font-awesome/css/font-awesome.css' rel='stylesheet'>
-			<link href='" . $GLOBALS['wgStylePath'] . "/naturkunde/css/main.css' rel='stylesheet'>
-			<link rel='shortcut icon' href='/favicon.ico' /> ");
+		
+		# Font-awesome
+		$headItems = sprintf( "<link href='%s/%s/font-awesome/css/%s' rel='stylesheet'>", $GLOBALS['wgStylePath'], $this->stylename, "font-awesome.css" );
+		
+		# Default stylesheet
+		$headItems .= $this->makeStylesheetLink( "main.css" );
+
+		# Extra theme set in LocalSettings.php $wgSkinTheme
+		if ( array_key_exists( 'wgSkinTheme', $GLOBALS ) ) {
+			$headItems .= $this->makeStylesheetLink( $GLOBALS['wgSkinTheme'] );
+		}
+		
+		# Main page background image
+		if ( array_key_exists( 'wgMainPageBackgroundImage', $GLOBALS ) ) {
+			$headItems .= $this->makeStylesheetInline( '
+				background-image: url(' . $GLOBALS['wgMainPageBackgroundImage'] . ');
+				background-repeat: no-repeat;
+				background-position: right center;
+				background-attachment: fixed;
+				background-size: 100%;'
+			);
+		}
+		
+		# Main page background color
+		if ( array_key_exists( 'wgMainPageBackgroundColor', $GLOBALS ) ) {
+			$headItems .= $this->makeStylesheetInline( 'background-color: ' . $GLOBALS['wgMainPageBackgroundColor'] );
+		}
+				
+		# Main page hide navigation and hr (useful when Mainpage has dark background)
+		if ( array_key_exists( 'wgMainPageHideNav', $GLOBALS ) ) {
+			$headItems .= '
+					body.page-Homepage_Test ul.nav-tabs, body.page-Homepage_Test div.page-actions,
+					body.page-Main_Page ul.nav-tabs, body.page-Main_Page div.page-actions,
+					body.page-Hauptseite ul.nav-tabs, body.page-Hauptseite div.page-actions, 
+					body.page-Homepage_Test #footer-row hr, body.page-Main_Page hr, body.page-Hauptseite hr {
+    					display: none;
+					}';
+		}
+		
+		# Icon
+		$headItems .= "<link rel='shortcut icon' href='/favicon.ico' />";
+
+		# Append to the default screen common & print styles...
+		$out->addHeadItem( 'naturkunde_css', $headItems );		
+	}
+	
+	private function makeStylesheetLink( $css ) {
+		return sprintf( "<link href='%s/%s/css/%s' rel='stylesheet'>", $GLOBALS['wgStylePath'], $this->stylename, $css );
+	}
+	
+	private function makeStylesheetInline( $style ) {
+		return sprintf( "<style>body.page-Main_Page, body.page-Hauptseite {%s}</style>", $style );
 	}
 }
 
@@ -93,7 +140,6 @@ class NaturkundeTemplate extends BaseTemplate {
 	public function execute() {		
 		// Initialize the site navigation
 		$this->buildNavigation();
-
 		// Output HTML page head
 		$this->html( 'headelement' );
 		// Load the templates
