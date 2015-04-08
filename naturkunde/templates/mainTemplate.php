@@ -9,16 +9,16 @@ include self::$templatePath . "/header.php";
 		<!-- panel -->
 		<aside class="col col-lg-3 noprint" id="widget-area" >
 		<!-- logo -->
-		<img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/>
+		<a href="<?php echo htmlspecialchars( $this->getMainPageUrl()) ?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/></a>
 		<!-- /logo -->
 		<?php
 		// SEARCH
 		include self::$templatePath . "/search.php";
+		$this->renderPortals( $this->data[ 'sidebar' ] );
 		// VARIANTS
 		if ( count( $this->data['variant_urls'] ) > 0 ) {
 			include self::$templatePath . "/variants.php";
 		}
-		$this->renderPortals( $this->data[ 'sidebar' ] );
 		?>
 		</aside>
 		<section role="main" id="page" class="col col-lg-9">

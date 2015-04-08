@@ -2,12 +2,29 @@
 A Mediawiki skin developed at Museum für Naturkunde Berlin
 
 ## Features
- * adaptive
  * supports sematic mediawiki and semantic forms
  * uses PHP as its templating engine
+ * Configurable Mainpage (see below)
 
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
+
+## Configuration
+The Mainpage may have a different look than the rest of the pages. Set these variables in your LocalSettings.php:
+
+$wgMainPageBackgroundImage
+Full URL (including http) to an image to be used as background on the Mainpage only. 
+The image will be scaled to width. Make it big (recommended: 150 px wide).
+
+$wgMainPageBackgroundColor
+Background color (name or hex) for the Mainpage.
+
+$wgMainPageHideNav
+Hide navigation elements on the Mainpage (comes in handy when the background is dark).
+
+$wgSkinTheme
+Path to an extra css file in the skins/naturkunde/css directory. 
+Use it instead of Mediawiki:Common.css if you have several wikis which share the same extra styles (e.g. different languages).
 
 ## Dependencies
 ### Font awesome toolkit
@@ -27,10 +44,6 @@ skins/
 --------------js/
 --------------templates/
 ```
-
-### Categorytree extension
-For enhanced usability, please install the categorytree mediawiki extension:
-http://www.mediawiki.org/wiki/Extension:CategoryTree
 
 ## Licenses
 Naturkunde - Mediawiki skin for Museum fuer Naturkunde Berlin
