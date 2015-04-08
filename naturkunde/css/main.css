@@ -6313,7 +6313,7 @@ ul.nav > li.active > a, ul.nav > li.active > a:hover {
 	opacity: 1; 
 	padding: 15px; 
 	margin-bottom: 15px;
-    text-align: justify;
+    text-align: left;
 }
 
 #footer-places a {
@@ -6442,6 +6442,11 @@ img.fck_mw_left {
 
 /* Semantic forms */
 
+.ui-datepicker-trigger {
+	padding: 0px !important;
+    margin: 5px;
+}
+
 table.formtable, table.metadata {
 	width: 100%;
 	margin: 1em 0px;
@@ -6473,9 +6478,7 @@ table.metadata textarea.createboxInput {
 	border: 1px solid #AAA;
 	height: inherit;
 	width: inherit;
-	min-width: 50%;
 	display: inline;
-	max-width: 280px;
 }
 
 table.metadata textarea.wikieditor {
