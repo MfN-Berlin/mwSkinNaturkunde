@@ -1,0 +1,201 @@
+/* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
+
+.navbar-inverse {
+    background-color: black !important;
+}
+
+#firstHeading {
+    border-bottom: none !important;
+    padding-top: 1em !important;
+}
+
+#firstHeading, h3 span.mw-headline, ul.nav-list h3, h2, h3, h4, h5 {
+    color: #b01f24 !important;
+    font-weight: bold !important;
+    text-align: left;
+    line-height: 142% !important;
+}
+
+#firstHeading, h1 span.mw-headline, h2 span.mw-headline, h3 span.mw-headline {
+    text-transform: uppercase;
+}
+
+#widget-area a, #widget-area a:hover, 
+ul.nav-tabs > li > a:hover, ul.nav-tabs > li > a:hover,
+a.image, a.image:hover {
+    color: black !important;
+    text-decoration: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+ul.nav-list li a, ul.nav li a, ul.nav li a:hover,
+#collectionPortletList a:hover, #footer-places a:hover {
+    color: black;
+/*    background: none !important; */
+}
+
+
+ul.nav > li.active > a, ul.nav > li.active > a:hover {
+    color: #9C9C9C;
+    background: white !important;
+}
+
+#mw-content-text a, #mw-normal-catlinks a, .page-info a {
+    color: black !important;
+    text-decoration: none !important;
+    border-bottom: 1px dotted black;
+}
+
+#footer-places a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+#mw-content-text li {
+    list-style: none;
+}
+
+#mw-content-text {
+    text-align: justify;
+}
+
+#widget-area .nav-list { 
+  background-color: white;
+  box-shadow: none;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+   background-color: black !important;
+   border-color: black !important;
+   transition: none;
+}
+
+.nav-list li:not(.active) > a:hover {
+  background-color: black;
+  transition: none;
+}
+
+.table td, .table th {
+    text-align: left;
+}
+
+/* Allow large images */
+.thumb {
+   margin: 0px !important;
+   margin-bottom: 15px !important;
+   border: none !important;
+}
+
+.mw-content-ltr .thumbcaption {
+    margin-left: 0px !important;
+    font-style: normal !important;
+    color: rgb(176, 31, 36);
+    font-weight: bold;
+}
+
+#mw-content-text img {
+    padding: 0px !important;
+    max-width: 870px !important;
+    max-height: 489px;
+    width: auto;
+}
+
+#mw-content-text div.thumb div.thumbinner {
+	max-width: 870px !important;
+	text-align: left;
+}
+
+/* Inline images*/
+#mw-content-text div.tright {
+	margin-left: 10px !important;
+}
+
+/* Background */
+
+body.page-Homepage_Test ul.nav-tabs, body.page-Homepage_Test div.page-actions,
+body.page-Main_Page ul.nav-tabs, body.page-Main_Page div.page-actions,
+body.page-Hauptseite ul.nav-tabs, body.page-Hauptseite div.page-actions {
+    display: none;
+}
+
+body.page-Homepage_Test #footer-places, body.page-Homepage_Test #page-info,
+body.page-Main_Page #footer-places, body.page-Main_Page #page-info,
+body.page-Hauptseite #footer-places, body.page-Hauptseite #page-info {
+    background-color: white;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+body.page-Homepage_Test #footer-row hr,
+body.page-Main_Page hr,
+body.page-Hauptseite hr {
+    visibility: hidden;
+}
+
+/* Bread crumbs */
+#mw-content-text .breadcrumbs, #mw-content-text .breadcrumbs a {
+    color: #b01f24 !important;
+    font-weight: bold !important;
+    text-align: left;
+    line-height: 142% !important;
+    border-bottom: none !important;
+}
+
+/* Hide Categories at bottom of page*/
+#catlinks {
+    visibility:hidden;
+}
+
+/* Tagcloud */
+.tagcloud {
+    width: 670;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+    margin-left: 100px;   
+}
+.tagcloud a {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+/*Inline nav*/
+#inline_category_nav {
+text-align: center;
+margin-top: 40px;
+}
+
+#inline_category_nav ul {
+list-style-type: none;
+padding: 0px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+display: block;
+}
+#inline_category_nav li {
+    display: inline;
+}
+#inline_category_nav a, #inline_category_nav strong.selflink {
+    text-decoration:none!important;
+    font-variant: small-caps;
+    margin: 0 20px 0 20px;
+    border-bottom: none;
+    padding: 0 5px 0 5px;
+    font-weight: normal;
+}
+#inline_category_nav a {
+    color: #b01f24 !important;
+}
+#inline_category_nav strong.selflink {
+    color: white !important;
+    background-color: black !important;
+}
+#inline_category_nav a:visited {
+    color: #888!important;
+}
+#inline_category_nav a:hover {
+    color: white!important;
+    background-color: #b01f24;
+}
