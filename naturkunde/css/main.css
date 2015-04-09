@@ -6305,7 +6305,6 @@ ul.nav-list li a, ul.nav li a, ul.nav li a:hover,
 
 ul.nav > li.active > a, ul.nav > li.active > a:hover {
     color: #9C9C9C;
-    background: white !important;
 }
 
 #mw-content-text {
