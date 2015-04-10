@@ -1,11 +1,6 @@
 ﻿# mwSkinNaturkunde
 A Mediawiki skin developed at Museum für Naturkunde Berlin
 
-## Features
- * supports sematic mediawiki and semantic forms
- * uses PHP as its templating engine
- * Configurable Mainpage (see below)
-
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
 
@@ -31,15 +26,15 @@ Use it instead of Mediawiki:Common.css if you have several wikis which share the
 Depends on Font Awesome toolkit by Dave Gandy - http://fontawesome.io
 
 Font-Awesome is included as a submodule. Please clone the main repository
-'''
+```
 git clone https://github.com/MfN-Berlin/mwSkinNaturkunde.git <path>
-'''
+```
 
 and then clone the submodules
-'''
+```
 cd <path>
 git submodule update --init
-'''
+```
 
 ## Licenses
 Naturkunde - Mediawiki skin for Museum fuer Naturkunde Berlin
