@@ -7,6 +7,14 @@
 #firstHeading {
     border-bottom: none !important;
     padding-top: 1em !important;
+    opacity: 0.8;
+    width: 97%; /* necessary to fit the 3 column table on the main page*/
+	padding-left: 0px !important;
+}
+
+body.page-Main_Page #firstHeading, body.page-Hauptseite #firstHeading {
+	padding-left: 15px !important;
+	padding-top: 7px !important;
 }
 
 #firstHeading, h3 span.mw-headline, ul.nav-list h3, h2, h3, h4, h5 {
@@ -20,13 +28,18 @@
     text-transform: uppercase;
 }
 
-#widget-area a, #widget-area a:hover, 
+#widget-area a,  
 ul.nav-tabs > li > a:hover, ul.nav-tabs > li > a:hover,
 a.image, a.image:hover {
     color: black !important;
     text-decoration: none !important;
     background: none !important;
     border: none !important;
+}
+
+#widget-area a:hover {
+	color: white !important;
+	background-color: black !important;
 }
 
 ul.nav-list li a, ul.nav li a, ul.nav li a:hover,
@@ -36,9 +49,8 @@ ul.nav-list li a, ul.nav li a, ul.nav li a:hover,
 }
 
 
-ul.nav > li.active > a, ul.nav > li.active > a:hover {
-    color: #9C9C9C;
-    background: white !important;
+ul.navbar-nav > li.active > a, ul.navbar-nav > li.active > a:hover {
+    background: #9C9C9C !important;
 }
 
 #mw-content-text a, #mw-normal-catlinks a, .page-info a {
@@ -58,6 +70,8 @@ ul.nav > li.active > a, ul.nav > li.active > a:hover {
 
 #mw-content-text {
     text-align: justify;
+    background-color: transparent;
+    padding: 0px !important;
 }
 
 #widget-area .nav-list { 
@@ -125,6 +139,11 @@ body.page-Hauptseite #footer-places, body.page-Hauptseite #page-info {
     background-color: white;
     padding: 15px;
     opacity: 0.8;
+    margin-right: 25px;
+}
+
+body.page-Main_Page #footer-places, body.page-Hauptseite #footer-places {
+    margin-right: 40px;	
 }
 
 body.page-Homepage_Test #footer-row hr,
@@ -162,21 +181,23 @@ body.page-Hauptseite hr {
 
 /*Inline nav*/
 #inline_category_nav {
-text-align: center;
-margin-top: 40px;
+	text-align: center;
+	margin-top: 40px;
 }
 
 #inline_category_nav ul {
-list-style-type: none;
-padding: 0px;
-margin-left: auto;
-margin-right: auto;
-overflow: hidden;
-display: block;
+	list-style-type: none;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: block;
 }
+
 #inline_category_nav li {
     display: inline;
 }
+
 #inline_category_nav a, #inline_category_nav strong.selflink {
     text-decoration:none!important;
     font-variant: small-caps;
@@ -185,16 +206,20 @@ display: block;
     padding: 0 5px 0 5px;
     font-weight: normal;
 }
+
 #inline_category_nav a {
     color: #b01f24 !important;
 }
+
 #inline_category_nav strong.selflink {
     color: white !important;
     background-color: black !important;
 }
+
 #inline_category_nav a:visited {
     color: #888!important;
 }
+
 #inline_category_nav a:hover {
     color: white!important;
     background-color: #b01f24;
