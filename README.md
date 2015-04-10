@@ -26,24 +26,20 @@ $wgSkinTheme
 Path to an extra css file in the skins/naturkunde/css directory. 
 Use it instead of Mediawiki:Common.css if you have several wikis which share the same extra styles (e.g. different languages).
 
-## Dependencies
+## Checking out and dependencies
 ### Font awesome toolkit
-Depends on Font Awesome toolkit by Dave Gandy.
-Please get Font Awesome from http://fontawesome.io
-Place the font-awesome folder containing css, font, less and scss into the naturkunde folder.
-Your folder structure should look like this:
-```
-skins/
-----naturkunde/
---------------css/
---------------font-awesome/
---------------------------css/
---------------------------font/
---------------------------less/
---------------------------scss/
---------------js/
---------------templates/
-```
+Depends on Font Awesome toolkit by Dave Gandy - http://fontawesome.io
+
+Font-Awesome is included as a submodule. Please clone the main repository
+'''
+git clone https://github.com/MfN-Berlin/mwSkinNaturkunde.git <path>
+'''
+
+and then clone the submodules
+'''
+cd <path>
+git submodule update --init
+'''
 
 ## Licenses
 Naturkunde - Mediawiki skin for Museum fuer Naturkunde Berlin
