@@ -64,10 +64,11 @@ ul.navbar-nav > li.active > a, ul.navbar-nav > li.active > a:hover {
     text-decoration: none !important;
 }
 
+/*
 #mw-content-text li {
     list-style: none;
 }
-
+*/
 #mw-content-text {
     text-align: justify;
     background-color: transparent;
@@ -127,11 +128,6 @@ ul.navbar-nav > li.active > a, ul.navbar-nav > li.active > a:hover {
 
 /* Background */
 
-body.page-Homepage_Test ul.nav-tabs, body.page-Homepage_Test div.page-actions,
-body.page-Main_Page ul.nav-tabs, body.page-Main_Page div.page-actions,
-body.page-Hauptseite ul.nav-tabs, body.page-Hauptseite div.page-actions {
-    display: none;
-}
 
 body.page-Homepage_Test #footer-places, body.page-Homepage_Test #page-info,
 body.page-Main_Page #footer-places, body.page-Main_Page #page-info,

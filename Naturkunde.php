@@ -94,13 +94,12 @@ class SkinNaturkunde extends SkinTemplate {
 				
 		# Main page hide navigation and hr (useful when Mainpage has dark background)
 		if ( array_key_exists( 'wgMainPageHideNav', $GLOBALS ) ) {
-			$headItems .= '
-					body.page-Homepage_Test ul.nav-tabs, body.page-Homepage_Test div.page-actions,
+			$headItems .= '<style>
 					body.page-Main_Page ul.nav-tabs, body.page-Main_Page div.page-actions,
 					body.page-Hauptseite ul.nav-tabs, body.page-Hauptseite div.page-actions, 
-					body.page-Homepage_Test #footer-row hr, body.page-Main_Page hr, body.page-Hauptseite hr {
+					body.page-Main_Page hr, body.page-Hauptseite hr {
     					display: none;
-					}';
+					}</style>';
 		}
 		
 		# Icon
