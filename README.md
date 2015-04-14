@@ -1,6 +1,10 @@
 ﻿# mwSkinNaturkunde
 A Mediawiki skin developed at Museum für Naturkunde Berlin
 
+Examples:
+
+* http://biowikifarm.net/v-mfn/panda_en
+
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
 
