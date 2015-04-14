@@ -3,7 +3,7 @@ A Mediawiki skin developed at Museum für Naturkunde Berlin
 
 Examples:
 
-* http://biowikifarm.net/v-mfn/panda_en
+* http://biowikifarm.net/v-mfn/panda
 
 ## Compatibility 
 Tested on Mediawiki 1.19, 1.20, 1.21
