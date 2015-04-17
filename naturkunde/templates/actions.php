@@ -1,5 +1,5 @@
-<a href="#" class="btn btn-small dropdown-toggle" data-toggle="dropdown" title="<?php $this->msg( 'actions' ) ?>">
-	<i class="icon-cogs"></i>
+<a href="#" class="btn btn-small" data-toggle="dropdown" title="<?php $this->msg( 'actions' ) ?>">
+	<i class="<?php echo $this->getIconClass( 'dropdown-toggle' ); ?>"></i>
 	<span class="caret"></span>
 </a>
 

@@ -3675,6 +3675,12 @@ button.close {
   background-color: #ddd;
 }
 
+/* Required by font-awesome */
+.icon {
+	font-family: FontAwesome;
+	font-style: normal;
+}
+
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
@@ -6406,6 +6412,7 @@ a.new {
 .page-info {
 	padding-top: 10px;
 	border-top: 1px solid #cccccc;
+	color: #9c9c9c;
 }
 
 /* Code blocks */

@@ -191,15 +191,31 @@ class NaturkundeTemplate extends BaseTemplate {
 	}
 	
 	/** 
-	 * Maps elements to icons. Icons are included in Font Awesome. 
+	 * Maps elements to icons. Icons are included in Font Awesome 4.3.
+	 * 
+	 * @see http://fontawesome.io/icons/
 	 */
 	protected static $_ICONS = array(
-			'ca-edit' => 'edit', 'ca-form_edit' => 'edit', 'ca-delete'=> 'trash', 'ca-protect' => 'lock', 'ca-unprotect' => 'unlock', 
-			'ca-watch' => 'eye-open', 'ca-move' => 'move', 'ca-view' => 'file-text', 'ca-history' => 'time', 
-			'privacy' => 'lock', 'about' => 'info', 'disclaimer' => 'warning-sign', 'ca-viewsource' => 'code', 
-			'ca-addsection' => 'plus-sign', 'ca-unwatch' => 'eye-close', 'ca-purge' => 'eraser', 'search' => 'search' );
+			'ca-edit' => 'pencil-square-o', 
+			'ca-form_edit' => 'pencil-square-o', 
+			'ca-delete'=> 'trash', 
+			'ca-protect' => 'lock', 
+			'ca-unprotect' => 'unlock', 
+			'ca-watch' => 'eye', 
+			'ca-move' => 'arrows', 
+			'ca-view' => 'file-text-o', 
+			'ca-history' => 'clock-o', 
+			'dropdown-toggle' => 'cogs',
+			'privacy' => 'lock', 
+			'about' => 'info', 
+			'disclaimer' => 'exclamation-triangle', 
+			'ca-viewsource' => 'code', 
+			'ca-addsection' => 'plus-square-o', 
+			'ca-unwatch' => 'eye-slash', 
+			'ca-purge' => 'eraser', 
+			'search' => 'search' );
 	protected function getIconClass( $element ) {
-		return 'icon-' . self::$_ICONS[ $element ];
+		return 'icon fa-' . self::$_ICONS[ $element ];
 	}
 	
 	/*** PORTALS ***/

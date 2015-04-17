@@ -91,7 +91,7 @@ ul.navbar-nav > li.active > a, ul.navbar-nav > li.active > a:hover {
   transition: none;
 }
 
-.table td, .table th {
+#mw-content-text .table td, #mw-content-text .table th {
     text-align: left;
 }
 
@@ -155,11 +155,6 @@ body.page-Hauptseite hr {
     text-align: left;
     line-height: 142% !important;
     border-bottom: none !important;
-}
-
-/* Hide Categories at bottom of page*/
-#catlinks {
-    visibility:hidden;
 }
 
 /* Tagcloud */
