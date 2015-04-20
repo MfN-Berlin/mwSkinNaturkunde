@@ -139,8 +139,10 @@ class NaturkundeTemplate extends BaseTemplate {
 	public function execute() {		
 		// Initialize the site navigation
 		$this->buildNavigation();
+
 		// Output HTML page head
 		$this->html( 'headelement' );
+				
 		// Load the templates
 		include self::$templatePath . "/mainTemplate.php";
 	}

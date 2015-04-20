@@ -6274,7 +6274,7 @@ td.visible-print {
 
 /* LOGO */
 #widget-area img.col-lg-12 {
-	max-width: 252px;
+/*	max-width: 252px; */
 	padding-left: 15px;
 }
 
