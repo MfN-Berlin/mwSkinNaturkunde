@@ -222,3 +222,8 @@ body.page-Hauptseite hr {
     color: white!important;
     background-color: #b01f24;
 }
+
+/* Play well with the editor */
+#mw-content-text .wikiEditor-ui a {
+	border-bottom: none;
+}

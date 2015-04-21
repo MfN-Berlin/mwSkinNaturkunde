@@ -6439,7 +6439,12 @@ img.fck_mw_left {
     float: left;
 }
 
-/* Abbrechen ist kaputt */
+/* WYSIWYG Link dialog */
+.cke_dialog_ui_vbox_child select {
+	padding: 1px; /* necessary otherwise first and last links search results are not shown */
+}
+
+/* Abbrechen ist kaputt (biowikifarm Problem) */
 .cancelLink {
 	display: none;
 }
