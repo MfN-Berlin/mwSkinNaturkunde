@@ -6620,13 +6620,6 @@ a.CategoryTreeLabelPage:hover {
 	color: #0068C6;
 }
 
-/*Hide the default editor*/
-/*
-.wikiEditor-ui .wikiEditor-ui-top {
-	display: none;
-}
-*/
-
 /* Hinweise */
  .note {
     padding: 0.5em;
@@ -6715,12 +6708,6 @@ a.CategoryTreeLabelPage:hover {
 
 .note-statusquo {
     background-image: url('http://upload.wikimedia.org/wikipedia/en/7/76/Cmbox_notice.png');
-}
-
-/* Default Editor ausblenden  */
-
-#wikiEditor-ui-toolbar {
-	display: none;
 }
 
 #sfForm #wikiEditor-ui-toolbar {
