@@ -27,6 +27,19 @@ if( !defined( 'MEDIAWIKI' ) ){
 	die( "This is a skins file for mediawiki and should not be viewed directly.\n" );
 }
 
+$wgExtensionCredits['skin'][] = array(
+		'path' => __FILE__,
+		'name' => 'Naturkunde', // name as shown under Special:Version
+		'namemsg' => 'skinname-naturkunde', // used since MW 1.24, see the section on "Localisation $
+		'version' => '1.0',
+		'url' => 'https://github.com/MfN-Berlin/mwSkinNaturkunde',
+		'author' => 'http://http://www.naturkundemuseum-berlin.de MfN, Alvaro Ortiz-Troncoso',
+		'descriptionmsg' => 'naturkunde-desc', // see the section on "Localisation messages" below
+		'license' => 'Apache-2.0+',
+);
+
+$wgValidSkinNames['naturkunde'] = 'Naturkunde';
+
 /**
  * SkinTemplate class for Naturkunde skin
  * 
