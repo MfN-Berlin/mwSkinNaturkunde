@@ -14,7 +14,7 @@ The Mainpage may have a different look than the rest of the pages. Set these var
 
 $wgMainPageBackgroundImage
 Full URL (including http) to an image to be used as background on the Mainpage only. 
-The image will be scaled to width. Make it big (recommended: 150 px wide).
+The image will be scaled to width. Make it big (recommended: 1600 px wide).
 
 $wgMainPageBackgroundColor
 Background color (name or hex) for the Mainpage.
