@@ -6274,7 +6274,7 @@ td.visible-print {
 
 /* LOGO */
 #widget-area img.col-lg-12 {
-	max-width: 252px;
+/*	max-width: 252px; */
 	padding-left: 15px;
 }
 
@@ -6439,7 +6439,12 @@ img.fck_mw_left {
     float: left;
 }
 
-/* Abbrechen ist kaputt */
+/* WYSIWYG Link dialog */
+.cke_dialog_ui_vbox_child select {
+	padding: 1px; /* necessary otherwise first and last links search results are not shown */
+}
+
+/* Abbrechen ist kaputt (biowikifarm Problem) */
 .cancelLink {
 	display: none;
 }
@@ -6615,13 +6620,6 @@ a.CategoryTreeLabelPage:hover {
 	color: #0068C6;
 }
 
-/*Hide the default editor*/
-/*
-.wikiEditor-ui .wikiEditor-ui-top {
-	display: none;
-}
-*/
-
 /* Hinweise */
  .note {
     padding: 0.5em;
@@ -6710,12 +6708,6 @@ a.CategoryTreeLabelPage:hover {
 
 .note-statusquo {
     background-image: url('http://upload.wikimedia.org/wikipedia/en/7/76/Cmbox_notice.png');
-}
-
-/* Default Editor ausblenden  */
-
-#wikiEditor-ui-toolbar {
-	display: none;
 }
 
 #sfForm #wikiEditor-ui-toolbar {

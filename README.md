@@ -4,9 +4,10 @@ A Mediawiki skin developed at Museum für Naturkunde Berlin
 Examples:
 
 * http://biowikifarm.net/v-mfn/panda
+* http://biowikifarm.net/v-mfn/arbeitstagung2015
 
 ## Compatibility 
-Tested on Mediawiki 1.19, 1.20, 1.21
+Works on MediaWiki 1.25+ (for MediaWiki older than 1.25, please use the 1.20 branch).
 
 ## Configuration
 The Mainpage may have a different look than the rest of the pages. Set these variables in your LocalSettings.php:

@@ -164,10 +164,17 @@ body.page-Hauptseite hr {
     padding: 15px 10px 15px 10px;
     margin-left: 100px;   
 }
-.tagcloud a {
+
+#mw-content-text .tagcloud a {
 	margin-left: 10px;
 	margin-right: 10px;
 	font-weight: bold;
+	border-bottom: none;
+}
+
+#mw-content-text .tagcloud a:hover {
+    color: white!important;
+    background-color: #b01f24;
 }
 
 /*Inline nav*/
@@ -214,4 +221,9 @@ body.page-Hauptseite hr {
 #inline_category_nav a:hover {
     color: white!important;
     background-color: #b01f24;
+}
+
+/* Play well with the editor */
+#mw-content-text .wikiEditor-ui a {
+	border-bottom: none;
 }
