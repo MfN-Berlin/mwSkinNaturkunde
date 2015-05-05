@@ -1,3 +1,4 @@
+<div id="content">
 <!-- firstHeading -->
 <header>
 	<h1 id="firstHeading"><?php $this->html( 'title' ) ?></h1>
@@ -76,3 +77,4 @@
 	?>
 	<!-- /pagestats -->
 </article>
+</div>
