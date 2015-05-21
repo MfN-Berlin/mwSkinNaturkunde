@@ -27,17 +27,16 @@ Path to an extra css file in the skins/naturkunde/css directory.
 Use it instead of Mediawiki:Common.css if you have several wikis which share the same extra styles (e.g. different languages).
 
 ## Checking out and dependencies
+
+Please clone the main repository:
+```
+git clone https://github.com/MfN-Berlin/mwSkinNaturkunde.git naturkunde
+```
 ### Font awesome toolkit
 Depends on Font Awesome toolkit by Dave Gandy - http://fontawesome.io
-
-Font-Awesome is included as a submodule. Please clone the main repository
+Font-Awesome is included as a submodule. Please clone the submodules:
 ```
-git clone https://github.com/MfN-Berlin/mwSkinNaturkunde.git <path>
-```
-
-and then clone the submodules
-```
-cd <path>
+cd naturkunde
 git submodule update --init
 ```
 
