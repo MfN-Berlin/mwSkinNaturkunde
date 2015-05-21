@@ -1,3 +1,3 @@
-[submodule "naturkunde/font-awesome"]
-	path = naturkunde/font-awesome
+[submodule "font-awesome"]
+	path = font-awesome
 	url = https://github.com/FortAwesome/Font-Awesome.git
