@@ -1003,6 +1003,36 @@ pre code {
   width: 100%;
 }
 
+/* Beamer */
+@media (max-width: 1000px) {
+	#widget-area {
+	   max-width: 225px;
+	   float: left;
+	   padding-right: 5px;
+	   padding-left: 5px;
+	}
+	#page {
+	   position: absolute;
+	   max-width: 525px;
+	   margin-left: 260px;
+	}
+	#footerRow {
+		float: left;
+		max-width: 250px;
+	}
+	#pt-uls {
+		display: none;
+	}
+	#page .page-actions {
+	   padding-bottom: 5px;
+	}
+	/* Logo */
+    img.col-lg-12 {
+       max-width: 225px;
+       padding-left: 0px;        
+    }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 728px;
