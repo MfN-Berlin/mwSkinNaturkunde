@@ -6689,6 +6689,14 @@ a.CategoryTreeLabelPage:hover {
 	min-height: 50px;
 }
 
+.note-test {
+    background-color: #F9F9F9;
+	padding-left: 60px;
+    background-image: url('http://upload.wikimedia.org/wikipedia/en/3/38/Imbox_content.png');
+    border-color: #AAA;
+	min-height: 50px;
+}
+
 .note-new {
     background-color: #D8E8FF;
     border-color: #AAA;
