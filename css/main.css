@@ -1004,7 +1004,7 @@ pre code {
 }
 
 /* Beamer */
-@media (max-width: 1000px) {
+@media screen (max-width: 1000px) {
 	body.page-Main_Page, body.page-Hauptseite {
 		background-position: right top;
 	}
