@@ -117,7 +117,7 @@ class SkinNaturkunde extends SkinTemplate {
 		
 		# Icon
 		$headItems .= "<link rel='shortcut icon' href='/favicon.ico' />";
-
+		$headItems .= "<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js\"></script>"
 		# Append to the default screen common & print styles...
 		$out->addHeadItem( 'naturkunde_css', $headItems );		
 	}
