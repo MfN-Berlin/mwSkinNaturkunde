@@ -6881,3 +6881,232 @@ body.page-Main_Page hr,
 body.page-Hauptseite hr {
     visibility: hidden;
 }
+
+/* Kommentare */
+#mw-content-text p i {
+   font-weight: normal;
+   font-style:normal;
+   color: blue;
+}
+
+/* Sammelseiten */
+.portlet .header {
+   background-color: rgb(76,175,80) !important;
+   border: 1px solid rgb(76,175,80) !important;
+}
+
+/* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
+.tip {
+   font-style: italic;
+   color: grey;
+}
+.editproperty {
+   float: right;
+}
+
+/*Buttons*/
+form.createbox input[type="submit"], form.createbox input[type="button"] {
+  background-color: rgb(175, 202, 11)!important;
+  border: medium none;
+  color: white !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
+  background-repeat: repeat-x;
+  border-color: #d3d7cf;
+}
+
+/* tabbed pages contents */
+.ui-widget {
+    font-family: Arial,sans-serif !important;
+    font-size: 1em!important;
+}
+#pfForm .createboxInput {
+   min-width: 500px;
+}
+
+/* no page header in tabbed pages */
+#firstHeading {
+    padding-top: 0em!important;
+    padding-bottom: 0em!important;
+    line-height: 1em!important;
+    margin-bottom: 0em!important;
+    margin-top: 0em!important;
+}
+
+/* No bullets in lists */
+#headertabs li {
+    list-style-type: none!important;
+}
+/* Tags */
+#tags ul {
+   list-style-type: none;
+   display: inline;
+   line-height: 2.25em;
+   margin-left: 0px;
+}
+
+#tags li {
+   display: inline;
+   background: rgb(175, 202, 11);
+   border-radius: 6px;
+   padding: 5px 10px 5px 10px;
+   color: #888;
+   white-space: nowrap;
+}
+
+#tags li a:hover {
+   color: black;
+}
+
+#tags ul li a[href^="http"] {
+    background-image: none;
+}
+
+.ui-tabs-anchor {
+   font-size: 11px;
+}
+
+.checkboxLabel {
+    display: block;
+}
+
+/* Language selector*/
+#pt-uls {
+	display: none;
+}
+
+/* Wikieditor Insert functions are not compatible with templates */
+#wikiEditor-section-main div.group-insert {
+   display: block;
+}
+div.group-insert {
+   display:none;
+}
+
+/*Listen*/
+.smw-columnlist-container li {
+   line-height: 1.25em;
+   padding: 3px;
+   border: 1px dotted white;
+}
+
+.smw-columnlist-container li:hover {
+   border: 1px dotted black;
+}
+
+/*
+.smw-columnlist-container a:hover {
+    color: white!important;
+    background-color: #005bad;
+}
+*/
+
+
+.smw-column {
+   padding-right: 10px;
+}
+
+/* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
+
+/* Homepage */
+body.page-Main_Page, body.page-Hauptseite {
+  background-color: #ffffff!important;
+  background-image:none!important;
+}
+
+#body.page-Main_Page #mw-content-text, body.page-Hauptseite #mw-content-text {
+#  background-color: #99CF08;
+#  color: white;
+#  border-radius: 300px;
+#  padding: 90px;
+#  font-weight: bold;
+#  font-size: 1.4em;
+#  text-align: center;
+#}
+#body.page-Main_Page #firstHeading, body.page-Hauptseite #firstHeading {
+#  visibility: hidden;
+#  display: none;
+#}
+
+#firstHeading {
+  font-family: Helvetica, sans-serif!important;
+  font-size: 3em!important;
+}
+
+/* Navbar on top of page */
+.navbar-inverse {
+  background-color: white!important;
+  border-bottom: 5px solid rgb(175, 202, 11) !important;
+}
+.navbar-inverse a {
+  color: #000000!important;
+}
+.navbar-inverse.Neverland .navbar-brand-name {
+  color: black!important;
+  text-shadow: none!important;
+}
+.navbar-fixed-top.Neverland .nav li a, .navbar-static-top.Neverland .nav li a, .navbar-nav li a {
+  text-shadow: none!important;
+  color: black;
+}
+.navbar-fixed-top.Neverland .nav li a:hover, .navbar-static-top.Neverland .nav li a:hover, .navbar-nav li a:hover {
+  color:white!important;
+}
+
+/*Nav tabs on top of content*/
+ul.nav > li > a {
+  color: black!important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: rgb(175, 202, 11)!important;
+  border: 1px solid rgb(175, 202, 11)!important;
+}
+a.btn-primary {
+  color: #ffffff!important;
+}
+.btn-primary, .btn-warning, .btn-danger, .btn-danger, .btn-success, .btn-info {
+  text-shadow: none!important;
+}
+a.btn {
+  color: black!important;
+}
+
+/* Nav menu on the left */
+#widget-area ul.nav-list li a {
+  border-bottom: 3px solid white !important;
+}
+
+#widget-area ul.nav-list li:hover a, #widget-area ul.nav-list a.CategoryTreeLabel:hover {
+  color: black!important;
+  background-color: white!important;
+  border-bottom: 3px solid rgb(175, 202, 11) !important;
+}
+
+/* Form tab */
+.ui-widget-header {
+  background: none!important;
+}
+a.ui-tabs-anchor {
+  color: black!important;
+}
+/* Text */
+a {
+  color: #0099bb!important;
+}
+
+/*Too many false warnings in smw attributes*/
+.smwtticon.warning {
+  display: none;
+}
+
+input, select {
+  display:inline!important;
+/*  width:auto!important; */
+}

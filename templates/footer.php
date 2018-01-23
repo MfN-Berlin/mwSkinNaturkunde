@@ -41,5 +41,6 @@
 	<?php
 	echo "<script async src='" . $GLOBALS['wgStylePath'] . "/naturkunde/js/bootstrap.js'></script>";
 	echo "<script async src='" . $GLOBALS['wgStylePath'] . "/naturkunde/js/bootstrap-neverland.js'></script>";
+	echo "<script async src='" . $GLOBALS['wgStylePath'] . "/naturkunde/js/naturkunde.js'></script>";
 	$this->printTrail(); ?>
 </div>
