@@ -7110,3 +7110,7 @@ input, select {
   display:inline!important;
 /*  width:auto!important; */
 }
+
+.navbar-inverse .navbar-nav > .active > a {
+    color: white!important;
+}
