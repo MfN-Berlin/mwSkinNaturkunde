@@ -213,6 +213,7 @@ class NaturkundeTemplate extends BaseTemplate {
 	 */
 	protected static $_ICONS = array(
 			'ca-edit' => 'pencil-square-o', 
+			'ca-ve-edit' => 'pencil-square-o', 
 			'ca-form_edit' => 'pencil-square-o', 
 			'ca-delete'=> 'trash', 
 			'ca-protect' => 'lock', 
