@@ -6891,10 +6891,9 @@ body.page-Hauptseite hr {
 
 /* Sammelseiten */
 .portlet .header {
-   background-color: rgb(76,175,80) !important;
-   border: 1px solid rgb(76,175,80) !important;
+    background-color: rgb(175, 202, 11);
+    border: 1px solid rgb(175, 202, 11);
 }
-
 /* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
 .tip {
    font-style: italic;
