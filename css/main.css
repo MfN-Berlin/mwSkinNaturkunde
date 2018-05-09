@@ -7314,7 +7314,7 @@ body.page-Main_Page, body.page-Hauptseite {
 /* Navbar on top of page */
 .navbar-inverse {
   background-color: white!important;
-  border-bottom: 5px solid rgb(76, 175, 80) !important;
+/*  border-bottom: 5px solid rgb(76, 175, 80) !important;*/
 }
 .navbar-inverse a {
   color: #000000!important;
