@@ -7013,10 +7013,10 @@ div.group-insert {
 /* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
 
 /* Homepage */
-body.page-Main_Page, body.page-Hauptseite {
-  background-color: #ffffff!important;
-  background-image:none!important;
-}
+#body.page-Main_Page, body.page-Hauptseite {
+#  background-color: #ffffff!important;
+#  background-image:none!important;
+#}
 
 #body.page-Main_Page #mw-content-text, body.page-Hauptseite #mw-content-text {
 #  background-color: #99CF08;
