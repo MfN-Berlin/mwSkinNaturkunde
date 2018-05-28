@@ -472,7 +472,7 @@
      outline-offset: -2px;
 }
  .btn:hover, .btn:focus {
-     color: #fff;
+     background-color: rgb(145,189,13);
      text-decoration: none;
 }
  .btn:active {
@@ -1018,7 +1018,7 @@
 /* Navbar on top of page */
  .navbar-inverse {
      background-color: white;
-     border-bottom: 5px solid rgb(175, 202, 11) ;
+     border-bottom: 5px solid rgb(125,163,11) ;
 }
  .navbar-inverse a {
      color: #000000;
@@ -1040,8 +1040,8 @@
 }
 /* Buttons */
  .btn-primary {
-     background-color: rgb(175, 202, 11);
-     border: 1px solid rgb(175, 202, 11);
+     background-color: rgb(125,163,11);
+     border: 1px solid rgb(125,163,11);
 }
  a.btn-primary {
      color: #ffffff;
@@ -1050,7 +1050,8 @@
      text-shadow: none;
 }
  a.btn {
-     color: black;
+   color: white;
+   text-decoration: none;
 }
 /* Nav menu on the left */
  #widget-area ul.nav-list li a {
@@ -1059,7 +1060,7 @@
  #widget-area ul.nav-list li:hover a, #widget-area ul.nav-list a.CategoryTreeLabel:hover {
      color: black;
      background-color: white;
-     border-bottom: 3px solid rgb(175, 202, 11) ;
+     border-bottom: 3px solid rgb(125,163,11) ;
 }
 /* Form tab */
 /* Text */
@@ -1122,17 +1123,7 @@
  ul.nav > li > a {
      color: black;
 }
-/* Buttons */
- a.btn-primary {
-     color: #ffffff;
-}
- .btn-primary {
-     text-shadow: none;
-}
- a.btn {
-     color: black;
-     text-decoration: none;
-}
+
 /* Nav menu on the left */
  #widget-area ul.nav-list li a {
      border-bottom: 3px solid white ;
@@ -1142,8 +1133,8 @@
      background-color: white;
 }
 .portlet .header {
-    background-color: rgb(175, 202, 11) ;
-    border: 1px solid rgb(175, 202, 11) ;
+    background-color: rgb(125,163,11) ;
+    border: 1px solid rgb(125,163,11) ;
     color: #FFF;
     padding: 0.1em;
     text-align: center;
@@ -1165,7 +1156,7 @@
     border-color: #D3D7CF;
 }
 form.createbox input[type="submit"], form.createbox input[type="button"] {
-    background-color: rgb(175, 202, 11);
+    background-color: rgb(125,163,11);
     border: medium none;
     color: white;
     width:auto;
