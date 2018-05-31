@@ -170,7 +170,7 @@
      margin: 0 0 10px;
 }
  h1, h2, h3 {
-     font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-weight: normal;
      line-height: 1em;
 }
@@ -533,6 +533,7 @@
      box-shadow: none;
 }
  button {
+     color:white;
      display: inline-block;
      padding: 8px 12px;
      margin-bottom: 0;
@@ -552,10 +553,6 @@
      outline: thin dotted #333;
      outline: 5px auto -webkit-focus-ring-color;
      outline-offset: -2px;
-}
- button:hover, button:focus {
-     color: #fff;
-     text-decoration: none;
 }
  button:active {
      background-image: none;
@@ -627,8 +624,8 @@
      right: 0;
      left: auto;
 }
-.open > .dropdown-menu {
-    display: block;
+ .open > .dropdown-menu {
+     display: block;
 }
  .nav {
      padding-left: 0;
@@ -727,9 +724,6 @@
      font-family: FontAwesome;
      font-style: normal;
 }
- .navbar-inverse {
-     background-color: #646464;
-}
  .navbar-inverse .navbar-nav > li > a {
      color: #ffffff;
 }
@@ -770,10 +764,7 @@
      text-shadow: 1px 1px 1px #2e3436;
 }
  .navbar-static-top.Neverland .nav li a:hover {
-     background-color: #888888;
-     border-radius: 2px;
-     -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+     color: rgb(125,163,11);
 }
 /* Footer links */
  #footer-places a {
@@ -788,9 +779,6 @@
      text-shadow: none;
      -webkit-transition: none;
      transition: none-out;
-}
- .navbar-inverse {
-     color: #fafafa;
 }
  .navbar-inverse.Neverland .navbar-inner {
      min-height: 40px;
@@ -905,6 +893,9 @@
      background: none ;
      border: none ;
 }
+ #widget-area a:hover{
+     color: rgb(125,163,11);
+}
  ul.nav-list li a, ul.nav li a, ul.nav li a:hover, #footer-places a:hover {
      color: black;
      border-bottom: none;
@@ -1002,18 +993,18 @@
      font-style:normal;
      color: blue;
 }
-
 /* No bullets in lists */
  #headertabs li {
      list-style-type: none;
 }
-#headertabs.large .ui-widget-content a {
-    color: #0099bb;
+ #headertabs.large .ui-widget-content a {
+     color: #0099bb;
 }
 /* Navbar on top of page */
  .navbar-inverse {
+     color: #fafafa;
      background-color: white;
-     border-bottom: 5px solid rgb(125,163,11) ;
+     border-bottom: 1px solid rgb(125,163,11) ;
 }
  .navbar-inverse a {
      color: #000000;
@@ -1025,9 +1016,6 @@
  .navbar-static-top.Neverland .nav li a, .navbar-nav li a {
      text-shadow: none;
      color: black;
-}
- .navbar-static-top.Neverland .nav li a:hover, .navbar-nav li a:hover {
-     color:white;
 }
 /*Nav tabs on top of content*/
  ul.nav > li > a {
@@ -1045,8 +1033,8 @@
      text-shadow: none;
 }
  a.btn {
-   color: white;
-   text-decoration: none;
+     color: white;
+     text-decoration: none;
 }
 /* Nav menu on the left */
  #widget-area ul.nav-list li a {
@@ -1094,10 +1082,9 @@
      line-height: 1em;
      margin-bottom: 0em;
      margin-top: 0em;
-     font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 3em;
 }
-
 /* Navbar on top of page */
  .navbar-inverse a {
      color: #000000;
@@ -1111,106 +1098,100 @@
      color: black;
      text-decoration: none;
 }
- .navbar-static-top.Neverland .nav li a:hover, .navbar-nav li a:hover {
-     color:white;
-}
 /*Nav tabs on top of content*/
  ul.nav > li > a {
      color: black;
 }
-
 /* Nav menu on the left */
- #widget-area ul.nav-list li a {
-     border-bottom: 3px solid white ;
-}
  #widget-area ul.nav-list li:hover a, #widget-area ul.nav-list a.CategoryTreeLabel:hover {
-     color: black;
+     color: rgb(125,163,11);
      background-color: white;
 }
-.portlet .header {
-    background-color: rgb(125,163,11) ;
-    border: 1px solid rgb(125,163,11) ;
-    color: #FFF;
-    padding: 0.1em;
-    text-align: center;
-    font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    margin-bottom: 0px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0px, rgba(99, 99, 99, 0) 60%, rgba(99, 99, 99, 0.4) 100%);
-    background-repeat: repeat-x;
+ .portlet .header {
+     background-color: rgb(125,163,11) ;
+     border: 1px solid rgb(125,163,11) ;
+     color: #FFF;
+     padding: 0.1em;
+     text-align: center;
+     font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 100%;
+     margin-bottom: 0px;
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0px, rgba(99, 99, 99, 0) 60%, rgba(99, 99, 99, 0.4) 100%);
+     background-repeat: repeat-x;
 }
-.portlet .content {
-    border: 1px solid #AAA;
-    vertical-align: top;
-    opacity: 1;
-    color: #000;
-    text-align: left;
-    margin: 0px 0px 10px;
-    padding: 0.3em 1em 1em;
-    background-color: white;
-    border-color: #D3D7CF;
+ .portlet .content {
+     border: 1px solid #AAA;
+     vertical-align: top;
+     opacity: 1;
+     color: #000;
+     text-align: left;
+     margin: 0px 0px 10px;
+     padding: 0.3em 1em 1em;
+     background-color: white;
+     border-color: #D3D7CF;
 }
-form.createbox input[type="submit"], form.createbox input[type="button"], input[type="submit"] {
-    margin-top: 3px;
-    background-color: rgb(125,163,11);
-    border: medium none;
-    color: white;
-    width: auto;
-    /*width: 270px;*/
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
-    background-repeat: repeat-x;
-    border-color: #d3d7cf;
+ form.createbox input[type="submit"], form.createbox input[type="button"], input[type="submit"] {
+     margin-top: 3px;
+     background-color: rgb(125,163,11);
+     border: medium none;
+     color: white;
+     width: auto;
+    /*width: 270px;
+     */
+     padding: 15px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
+     background-repeat: repeat-x;
+     border-color: #d3d7cf;
 }
-form.createbox input[type="submit"]:hover, form.createbox input[type="button"]:hover, input[type="submit"]:hover {
-background-color: rgb(145,189,13);
+ form.createbox input[type="submit"]:hover, form.createbox input[type="button"]:hover, input[type="submit"]:hover {
+     background-color: rgb(145,189,13);
 }
-fieldset{
-  border:0;
+ fieldset{
+     border:0;
 }
-legend {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: inherit;
-    color: #333333;
-    border: 0;
-    border-bottom: 1px solid #e5e5e5;
+ legend {
+     display: block;
+     width: 100%;
+     padding: 0;
+     margin-bottom: 20px;
+     font-size: 21px;
+     line-height: inherit;
+     color: #333333;
+     border: 0;
+     border-bottom: 1px solid #e5e5e5;
 }
-
 /*Datenschutzbanner*/
-.mw-cookiewarning-container {
-  background-color: rgb(0, 153, 187);
-  opacity: 1;
-  padding: 3px 10px 3px;
+ .mw-cookiewarning-container {
+     background-color: rgb(0, 153, 187);
+     opacity: 1;
+     padding: 3px 10px 3px;
 }
-.mw-cookiewarning-text span {
-  display: block;
-  margin-bottom: 10pt;
+ .mw-cookiewarning-text span {
+     display: block;
+     margin-bottom: 10pt;
 }
-.mw-cookiewarning-text .mw-cookiewarning-dismiss,.mw-cookiewarning-text a {
-  background-image: none;
-  line-height: 2;
-  padding: 5px 10px;
-  background-color: rgb(60, 60, 60);
-  vertical-align: middle;
-  width: auto;
-  display: inline-block;
+ .mw-cookiewarning-text .mw-cookiewarning-dismiss,.mw-cookiewarning-text a {
+     background-image: none;
+     line-height: 2;
+     padding: 5px 10px;
+     background-color: rgb(60, 60, 60);
+     vertical-align: middle;
+     width: auto;
+     display: inline-block;
 }
-.CategoryTreeBullet span{
-  color:rgb(125,163,11) !important;
+ .CategoryTreeBullet span{
+     color:rgb(125,163,11) !important;
 }
-.dayInput, .yearInput, .monthInput{
-  width: auto;
-  display: inline;
+ .dayInput, .yearInput, .monthInput{
+     width: auto;
+     display: inline;
 }
-.metadata th{
-  width:65%;
+ .metadata th{
+     width:65%;
 }
+ 
