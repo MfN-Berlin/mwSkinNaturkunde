@@ -13,14 +13,14 @@
 }
  body {
      margin: 0;
-     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
      line-height: 1.428571429;
      color: #2e3436;
      background-color: #ffffff;
      background-image: none;
 }
  a:focus {
-     outline: thin dotted;
+     outline: thin dotted #333;
 }
  a:active, a:hover {
      outline: 0;
@@ -146,11 +146,6 @@
      color: #0099bb;
      text-decoration: none;
 }
- a:focus {
-     outline: thin dotted #333;
-     outline: 5px auto -webkit-focus-ring-color;
-     outline-offset: -2px;
-}
 /*Icon für externe Links */
  a[href^="http"] {
      background-position: right center;
@@ -175,7 +170,7 @@
      margin: 0 0 10px;
 }
  h1, h2, h3 {
-     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-weight: normal;
      line-height: 1em;
 }
@@ -1099,7 +1094,7 @@
      line-height: 1em;
      margin-bottom: 0em;
      margin-top: 0em;
-     font-family: Helvetica, sans-serif;
+     font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
      font-size: 3em;
 }
 
@@ -1138,7 +1133,7 @@
     color: #FFF;
     padding: 0.1em;
     text-align: center;
-    font-family: arial;
+    font-family:  "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 100%;
     margin-bottom: 0px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0px, rgba(99, 99, 99, 0) 60%, rgba(99, 99, 99, 0.4) 100%);
@@ -1155,11 +1150,12 @@
     background-color: white;
     border-color: #D3D7CF;
 }
-form.createbox input[type="submit"], form.createbox input[type="button"] {
+form.createbox input[type="submit"], form.createbox input[type="button"], input[type="submit"] {
+    margin-top: 3px;
     background-color: rgb(125,163,11);
     border: medium none;
     color: white;
-    width:auto;
+    width: auto;
     /*width: 270px;*/
     padding: 15px 32px;
     text-align: center;
@@ -1170,6 +1166,9 @@ form.createbox input[type="submit"], form.createbox input[type="button"] {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
     background-repeat: repeat-x;
     border-color: #d3d7cf;
+}
+form.createbox input[type="submit"]:hover, form.createbox input[type="button"]:hover, input[type="submit"]:hover {
+background-color: rgb(145,189,13);
 }
 fieldset{
   border:0;
@@ -1204,4 +1203,14 @@ legend {
   vertical-align: middle;
   width: auto;
   display: inline-block;
+}
+.CategoryTreeBullet span{
+  color:rgb(125,163,11) !important;
+}
+.dayInput, .yearInput, .monthInput{
+  width: auto;
+  display: inline;
+}
+.metadata th{
+  width:65%;
 }
