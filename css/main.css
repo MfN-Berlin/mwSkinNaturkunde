@@ -1294,10 +1294,6 @@ h2 {
    border-bottom: 1px solid rgb(125,163,11);
 }
 
-#headertabs ul.ui-widget-header li.selected a {
-   color: #000!important;
-}
-
 .ui-widget-content {
    background: none!important;
    border:none!important;
@@ -1457,4 +1453,51 @@ pre {
 #wpTextbox1 {
    width:100%;
 }
- 
+
+.navbar-nav {
+    padding-bottom: 2px;
+    padding-right: 15px;
+}
+
+.btn:not([class*="btn-primary"]):not([class*="btn-warning"]):not([class*="btn-danger"]):not([class*="btn-success"]):not([class*="btn-info"]):not([class*="btn-link"]) {
+    margin-left: 1px!important;
+}
+
+.btn-group .btn + .btn {
+    margin-left: 1px!important;
+}
+
+.ve-ui-toolbar {
+   font-size: 16px;
+}
+
+#pt-login a, #pt-logout a {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: 0px!important;
+}
+
+form.createbox input[type="submit"], form.createbox input[type="button"], input[type="submit"] {
+   color: #2e3436!important;
+   background-image: none!important;
+}
+
+form.createbox input[type="submit"]:hover, form.createbox input[type="button"]:hover, input[type="submit"]:hover {
+   color: white!important;
+   background-color: rgb(125,163,11)!important;
+}
+
+#firstHeading {
+    line-height: 1.5em !important;
+    margin-top: 1em !important;
+}
+
+#headertabs ul.ui-widget-header li[aria-selected="false"] {
+ background-color: none!important;
+ color: #797979!important;
+}
+
+#headertabs ul.ui-widget-header li[aria-selected="true"] {
+ background-color: #f9f9f9!important;
+ color: 000!important;
+}
