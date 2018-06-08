@@ -5,7 +5,7 @@
 			value="<?php $this->text( 'search' ) ?>"
 		<?php } ?> />
 		<span class="input-group-btn">
-			<button class="btn btn-primary" type="button" onclick="submit();"><i class="<?php echo $this->getIconClass( 'search' ); ?>"></i></button>
+			<button class="btn" type="button" onclick="submit();"><i class="<?php echo $this->getIconClass( 'search' ); ?>"></i></button>
 		</span>
 	</div>
 	<input type="hidden" name="title" value="<?php $this->text( 'searchtitle' ) ?>" />
