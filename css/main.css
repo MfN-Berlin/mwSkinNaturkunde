@@ -1283,10 +1283,12 @@ h2 {
    border-bottom: 1px solid rgb(125,163,11);
 }
 
+/* conflicts with autocomplete in forms
 .ui-widget-content {
    background: none!important;
    border:none!important;
 }
+*/
 
 .ui-tabs-panel {
    background: #f9f9f9!important;
