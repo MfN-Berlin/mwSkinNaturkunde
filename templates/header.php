@@ -15,6 +15,7 @@
 					}
 					?>
 				</ul>
+				<?php include self::$templatePath . "/search.php";?>
 			</div>
 		</div>
 	</div>

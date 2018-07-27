@@ -12,8 +12,8 @@ include self::$templatePath . "/header.php";
 		<a href="<?php echo htmlspecialchars( $this->getMainPageUrl()) ?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/></a>
 		<!-- /logo -->
 		<?php
-		// SEARCH
-		include self::$templatePath . "/search.php";
+		// SEARCH - moved to top bar
+		// include self::$templatePath . "/search.php"; 
 		$this->renderPortals( $this->data[ 'sidebar' ] );
 		// VARIANTS
 		if ( count( $this->data['variant_urls'] ) > 0 ) {

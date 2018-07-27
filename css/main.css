@@ -1520,3 +1520,45 @@ input.mw-cookiewarning-dismiss:hover {
     border-top-left-radius: 0px;
 }
 
+/* Suche */
+#searchform {
+  margin-bottom: 2px!important;
+  width: auto;
+}
+#searchform input, #searchform button {
+  height: 24px!important;
+  padding-top: 2px;
+}
+#searchform .input-group-btn {
+   position: relative;
+   white-space: nowrap;
+}
+
+/*Datenschutzbanner*/
+.mw-cookiewarning-container {
+  background-color: rgb(0, 153, 187);
+  opacity: 1;
+}
+
+.mw-cookiewarning-text span {
+  display: block;
+  margin-bottom: 10pt;
+}
+
+.mw-cookiewarning-text a {
+  background-image: none !important;
+  line-height: 2;
+  padding: 3px 10px 7px;
+  display: inline-block;
+}
+
+.mw-cookiewarning-dismiss{
+    background-image: none !important;
+    padding: 5px 10px!important;
+    background-color: rgb(60, 60, 60)!important;
+    line-height: 2!important;
+}
+#mw-content-text p i {
+   color: #666!important;
+   font-style: italic!important;
+}
