@@ -176,7 +176,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
  h1, h2, h3 {
      font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-weight: normal;
      line-height: 1em;
 }
  h1 {
@@ -208,16 +207,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
      line-height: 142% ;
 }
  h2 {
-     font-size: 1.5em;
-     margin-bottom: 0.6em;
-     padding-top: 0.5em;
-     padding-bottom: 0.17em;
+   color: #1a1a1a;
+   font-size: 1.2em;
+   padding-top: 1em;
 }
- h3 {
-     font-size: 1.25em;
-     margin-bottom: 0.3em;
-     padding-top: 0.5em;
-     padding-bottom: 0.17em;
+
+h3 {
+   color: #666;
+   line-height: 2.25rem;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+   padding-top: 0.5em;
+   font-size: 1em;
 }
  ul {
      margin-top: 0;
@@ -237,7 +238,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
  h1, h2, h3 {
      margin-top: 0;
-     color: black;
 }
  label {
      font-weight: bold;
@@ -1246,10 +1246,8 @@ h2.mw-headline {
     margin-bottom: 1.5em;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 2.25em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 .ui-widget-header {
    border:none!important;
@@ -1561,4 +1559,17 @@ input.mw-cookiewarning-dismiss:hover {
 #mw-content-text p i {
    color: #666!important;
    font-style: italic!important;
+}
+
+.tip {
+    font-style: italic;
+    color: #999;
+}
+
+.tiplink {
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/External.svg/10px-     External.svg.png");
+   background-repeat: no-repeat;
+   background-position-y: center;
+   display: inline-block;
+   width: 100px;   
 }
