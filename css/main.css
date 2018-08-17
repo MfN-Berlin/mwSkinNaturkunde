@@ -102,6 +102,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
     border-radius: 3px;    
 }
+
+/* Visual Editor save button*/
+.oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
+    background-color: rgb(125,163,11);
+    font-weight: normal;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button span {
+    color: black;
+}
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
+    background-color: rgb(125,163,11);
+    font-weight: normal;
+    color: white!important;
+}
 @media print {
      * {
          color: #000 ;
@@ -1311,7 +1325,7 @@ body{
 }
 
 #content a, .tagcloud a, .dropdown-menu a, #footerRow a {
-    color: #7da30b!important;
+    color: #7da30b;
 }
 
 .nav-tabs {
