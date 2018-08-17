@@ -92,6 +92,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
      padding: 0;
      border: 0;
 }
+
+/* Visual Editor debug bar*/
+.ve-ui-debugBar{
+    display:none;
+}
+.ve-ui-surface {
+    background: white !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+    border-radius: 3px;    
+}
 @media print {
      * {
          color: #000 ;
@@ -187,11 +197,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
  h1, h2, h3 {
      margin-top: 10px;
-     margin-bottom: 10px;
+     margin-bottom: 0px;
 }
  #firstHeading {
      border-bottom: none;
-     background-color: white;
      padding-left: 15px;
 }
  #firstHeading, h1 {
@@ -216,7 +225,6 @@ h3 {
    color: #666;
    line-height: 2.25rem;
    margin-top: 1.5rem;
-   margin-bottom: 1.5rem;
    padding-top: 0.5em;
    font-size: 1em;
 }
@@ -882,7 +890,8 @@ h3 {
      padding: 15px;
      margin-bottom: 15px;
      text-align: left;
-}
+ }
+
  #footer-places a {
      color: black ;
      text-decoration: none ;
@@ -965,10 +974,6 @@ h3 {
      font-weight: normal;
      font-style:normal;
      color: blue;
-}
-/* No bullets in lists */
- #headertabs li {
-     list-style-type: none;
 }
  #headertabs.large .ui-widget-content a {
      color: #0099bb;
@@ -1286,6 +1291,10 @@ h2 {
    border:none!important;
 }
 
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
+}
 .ui-dialog, .ui-autocomplete {
    background-color: #ffffff!important;
 }
@@ -1348,7 +1357,8 @@ pre {
 
 #mw-content-text {
    background: #f0f0f0!important;
-   padding: 0px!important;
+   padding: 0px;
+   padding-top: 1em;
 }
 
 #firstHeading {
@@ -1497,6 +1507,11 @@ li.ui-state-default {
     padding-left: 0px;
 }
 
+/* Narrower tabs (too many tabs)*/
+.ui-tabs .ui-tabs-nav li a {
+    padding: .5em 0.5em;
+}
+
 /* version history page  */
 .mw-history-compareselectedversions-button {
     margin-bottom: 15px;
@@ -1565,8 +1580,9 @@ input.mw-cookiewarning-dismiss:hover {
 }
 
 .tip {
-    font-style: italic;
-    color: #999;
+    color: #666;
+    font-size: 0.9em;
+    padding-bottom: 0.5em;
 }
 
 .tiplink {
@@ -1575,4 +1591,11 @@ input.mw-cookiewarning-dismiss:hover {
    background-position-y: center;
    display: inline-block;
    width: 100px;   
+}
+.functionalProperty {
+    margin-left: 1em;
+}
+/*Hack to get rid of unecessary P after bulleted list*/
+.nonFunctionalProperty + p {
+    display: none;
 }
