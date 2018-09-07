@@ -240,7 +240,7 @@ h3 {
    line-height: 2.25rem;
    margin-top: 1.5rem;
    padding-top: 0.5em;
-   font-size: 1em;
+   font-size: 1.25em;
 }
  ul {
      margin-top: 0;
@@ -1265,7 +1265,7 @@ h2.mw-headline {
     margin-bottom: 1.5em;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 2.25em;
 }
 .ui-widget-header {
