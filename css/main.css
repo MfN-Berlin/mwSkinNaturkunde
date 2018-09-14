@@ -1301,8 +1301,12 @@ h2 {
 }
 
 .ui-widget-content {
-   background: none!important;
-   border:none!important;
+   background: none;
+   border:none;
+}
+
+#ui-datepicker-div {
+   background: white;
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
