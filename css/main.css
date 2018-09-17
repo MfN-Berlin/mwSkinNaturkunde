@@ -1529,6 +1529,10 @@ li.ui-state-default {
 .ui-tabs .ui-tabs-nav li a {
     padding: .5em 0.5em;
 }
+.ht-editsection {
+    display:none;
+}
+
 
 /* version history page  */
 .mw-history-compareselectedversions-button {
