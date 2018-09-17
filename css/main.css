@@ -969,7 +969,14 @@ h3 {
      background-image: url('http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png');
      border-color: #AAA;
      min-height: 50px;
-}
+ }
+ .note-check {
+     background-color: #F9F9F9;
+     padding-left: 60px;
+     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/OptiYes_check.svg/40px-OptiYes_check.svg.png');
+     border-color: #AAA;
+     min-height: 50px;
+ }
 /* Urheberrecht */
 /* Textkategorien */
 /* Aufgabentabelle */
