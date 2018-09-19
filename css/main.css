@@ -254,7 +254,8 @@ h3 {
      margin-bottom: 20px;
 }
  dt {
-     font-weight: bold;
+     font-weight: normal;
+     font-style: italic;
 }
  dt, dd {
      line-height: 1.428571429;
