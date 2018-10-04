@@ -13,8 +13,9 @@ include self::$templatePath . "/header.php";
 		<!-- /logo -->
 		<?php
 		// SEARCH - moved to top bar
-		// include self::$templatePath . "/search.php"; 
-		$this->renderPortals( $this->data[ 'sidebar' ] );
+		// include self::$templatePath . "/search.php";
+		// MAIN moved to header
+		// $this->renderPortals( $this->data[ 'sidebar' ] );
 		// VARIANTS
 		if ( count( $this->data['variant_urls'] ) > 0 ) {
 			include self::$templatePath . "/variants.php";
