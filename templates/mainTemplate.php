@@ -8,9 +8,6 @@ include self::$templatePath . "/header.php";
 		
 		<!-- panel -->
 		<aside class="col col-lg-3 noprint" id="widget-area" >
-		<!-- logo -->
-		<a href="<?php echo htmlspecialchars( $this->getMainPageUrl()) ?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" style="margin-top: 20px; "/></a>
-		<!-- /logo -->
 		<?php
 		// SEARCH - moved to top bar
 		// include self::$templatePath . "/search.php";

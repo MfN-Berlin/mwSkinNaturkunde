@@ -22,6 +22,7 @@ body {
      height: 100%;
 }
 #page {
+    width: 100%;
     min-height: calc(50% - 100px); /*mind the spaces around the operator*/
 }
 a, a:focus, a:active, a:hover {
@@ -370,7 +371,7 @@ h3 {
          width: 25%;
     }
      .col-lg-9 {
-         width: 75%;
+         width: auto;
     }
      .col-lg-12 {
          width: 100%;
@@ -671,7 +672,7 @@ line-height: 1.5em;
 
  .menu-group {
      width: auto;
-     margin-left: 10%;
+     margin-left: 300px;
  }
  .nav {
      padding-left: 0;
@@ -881,6 +882,7 @@ line-height: 1.5em;
      border-bottom-right-radius: 0;
 }
  .btn .caret {
+     padding-top: 0;
      margin-left: 0;
 }
  .thumb {
@@ -926,7 +928,14 @@ line-height: 1.5em;
      top: -10px;
 }
 /* LOGO */
- #widget-area img.col-lg-12 {
+#logo {
+    background-color: white;
+    position: absolute;
+    margin-top: 0;
+    width: 164px;
+    margin-left: 9px;
+}
+#widget-area img.col-lg-12 {
      padding-left: 15px;
 }
 /* Werkzeuge Links */
@@ -1405,7 +1414,9 @@ body{
 }
 
 .nav-tabs {
+    visibility:hidden;
     border-bottom: 1px solid #fff!important;
+    padding-left: 200px;
 }
 
 .navbar-static-top.Neverland .nav li {
@@ -1651,8 +1662,17 @@ input.mw-cookiewarning-dismiss:hover {
    position: relative;
    white-space: nowrap;
 }
-#searchbutton, .dropdown-caret-only {
+#searchbutton {
     border: none !important;
+    padding-top: 2px!important;
+}
+.dropdown-caret-only {
+    border: none !important;
+    padding-top: 0!important;
+    margin-top: 0;
+}
+.dropdown {
+    padding-left: 30px;
 }
 #searchform .dropdown {
     float:none!important;

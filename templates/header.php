@@ -1,5 +1,4 @@
 <!-- Page header, navigation- and user-settings-widgets. -->
-
 <header role="banner" id="top-small" class="navbar navbar-inverse navbar-static-top full-version Neverland noprint">
 	<div class="navbar-inner">
 		<div class="container">
@@ -9,7 +8,7 @@
 			    // INTERN und WEKZEUGE
 			    if ( $this->data[ 'loggedin' ] ) { # Only render Tools if Logged in
 			       echo('<ul class="nav navbar-nav">');
-			       echo('<li class="tool-btn"><a href="./Kategorie:Inhaltsverzeichnis">Intern</a></li>');
+			       echo('<li class="tool-btn"><a href="./Intern">Intern</a></li>');
 			       echo('<li class="tool-btn"><a href="./Spezial:Spezialseiten">Spezialseiten</a></li>');
                                echo('</ul>');
 			    }
@@ -33,6 +32,10 @@
 <header role="banner" id="top-large" class="navbar navbar-static-top full-version Neverland noprint">
 	<div class="navbar-inner">
 		<div class="container">
+<!-- logo -->
+<div id="logo">
+<a href="<?php echo htmlspecialchars( $this->getMainPageUrl()) ?>"><img src="<?php $this->text( 'logopath' ) ?>" class="col-lg-12" id="logo"/></a>
+</div>
 			<div class="nav">
 			     <div class='menu-group'>
 			     <!-- MAIN NAVIGATION -->
