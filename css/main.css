@@ -1654,6 +1654,9 @@ input.mw-cookiewarning-dismiss:hover {
   float: right;
   padding-top: 8px;
 }
+#searchform .dropdown{
+    padding-left: 0;
+}
 #searchform input, #searchform button {
   height: 24px!important;
   padding-top: 2px;
