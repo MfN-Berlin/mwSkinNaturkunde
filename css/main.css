@@ -10,6 +10,7 @@ html {
      font-family: sans-serif;
      font-size: 90%;
      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+     height: 100%;
 }
 body {
      margin: 0;
@@ -18,6 +19,10 @@ body {
      color: #2e3436;
      background-color: #ffffff;
      background-image: none;
+     height: 100%;
+}
+#page {
+    min-height: calc(50% - 100px); /*mind the spaces around the operator*/
 }
 a, a:focus, a:active, a:hover {
     outline: 0;
@@ -330,7 +335,7 @@ h3 {
          padding-right: 5px;
          padding-left: 5px;
     }
-     #page {
+    #page {
          position: absolute;
          max-width: 525px;
          margin-left: 260px;
@@ -498,7 +503,7 @@ h3 {
      outline: 5px auto -webkit-focus-ring-color;
      outline-offset: -2px;
 }
-.btn:hover, .btn:focus {
+.btn:hover:not([class*='btn-menu']), .btn:focus:not([class*='btn-menu']) {
      background-color: rgb(145,189,13);
      text-decoration: none;
 }
@@ -534,11 +539,11 @@ form {
      border-color: #d3d7cf;
      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#339c9c9c', GradientType=0);
 }
-.btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):active {
+.btn:not[(class*='dropdown-caret-only')]:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):active {
      background-color: #ededed;
      border-color: #b9c0b3;
 }
-.btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):active {
+.btn:not[(class*='dropdown-caret-only')]:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):active {
      background-color: #ffffff;
 }
 .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus {
@@ -629,6 +634,13 @@ button:active {
      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
      background-clip: padding-box;
+font-size: 18px;
+color: #666 !important;
+font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+white-space: nowrap;
+color: #666 !important;
+font-weight: 300;
+line-height: 1.5em;
 }
 .dropdown-menu > li > a {
      display: block;
@@ -641,6 +653,14 @@ button:active {
 .dropdown-menu > li > a:hover {
     color: rgb(145,189,13)!important;
 }
+.dropdown-caret-only{
+    background-color: rgb(125,163,11);
+    color: black;
+}
+.dropdown-caret-only:hover{
+    background-color: rgb(125,163,11);    
+    border-bottom: none;
+}
 .pull-right > .dropdown-menu {
      right: 0;
      left: auto;
@@ -649,10 +669,9 @@ button:active {
      display: block;
  }
 
- .menu-group h3 {
-     position: relative;
-     float: left;
-     padding: 5px 10px;
+ .menu-group {
+     width: auto;
+     margin-left: 10%;
  }
  .nav {
      padding-left: 0;
@@ -971,7 +990,7 @@ button:active {
 /* Image metadata*/
 /* Info footer */
  .page-info {
-     padding-top: 10px;
+     padding: 10px 0 10px 0;
      border-top: 1px solid #cccccc;
      color: #9c9c9c;
 }
@@ -1248,8 +1267,9 @@ a.btn {
 
 .navbar-inverse.Neverland .navbar-brand-name {
    color:white!important;
-   margin-top: 0px!important;
+   margin-top: 3px!important;
    font-size: 16px!important;
+   margin-right: 20px;
 }
 
 .navbar-inverse {
@@ -1270,11 +1290,18 @@ a.btn {
 }
 
 /* Login / logout button */
-#pt-login, #pt-logout {
+#pt-login, #pt-logout, .tool-btn {
    background-color: rgb(125,163,11)!important;
    max-height: 23px;
+   margin-left: 5px;
+   padding: 0 8px 0 3px;
 }
-
+.tool-btn a {
+   color: black!important;
+}
+#sitename a{
+    color: white;
+}
 #pt-login a, #pt-logout a {
    color: black!important;
 }
@@ -1477,6 +1504,7 @@ pre {
    margin: 0;
    clear:both;
    position: relative;
+   height: 25%;
 }
 
 #footerRow hr {
@@ -1611,6 +1639,9 @@ input.mw-cookiewarning-dismiss:hover {
 #searchform {
   margin-bottom: 2px!important;
   width: auto;
+  width: 25%;
+  float: right;
+  padding-top: 8px;
 }
 #searchform input, #searchform button {
   height: 24px!important;
@@ -1620,7 +1651,12 @@ input.mw-cookiewarning-dismiss:hover {
    position: relative;
    white-space: nowrap;
 }
-
+#searchbutton, .dropdown-caret-only {
+    border: none !important;
+}
+#searchform .dropdown {
+    float:none!important;
+}
 /*Datenschutzbanner*/
 .mw-cookiewarning-container {
   background-color: rgb(0, 153, 187);

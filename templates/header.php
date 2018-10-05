@@ -3,7 +3,18 @@
 <header role="banner" id="top-small" class="navbar navbar-inverse navbar-static-top full-version Neverland noprint">
 	<div class="navbar-inner">
 		<div class="container">
-			<span class="navbar-brand-name"><?php echo $GLOBALS[ 'wgSitename' ]; ?></span>
+			<div class="nav pull-left optional">
+			    <span id="sitename" class="navbar-brand-name"><a href="<?php echo htmlspecialchars( $this->getMainPageUrl()) ?>"><?php echo $GLOBALS[ 'wgSitename' ]; ?></a></span>
+			    <?php
+			    // INTERN und WEKZEUGE
+			    if ( $this->data[ 'loggedin' ] ) { # Only render Tools if Logged in
+			       echo('<ul class="nav navbar-nav">');
+			       echo('<li class="tool-btn"><a href="./Kategorie:Inhaltsverzeichnis">Intern</a></li>');
+			       echo('<li class="tool-btn"><a href="./Spezial:Spezialseiten">Spezialseiten</a></li>');
+                               echo('</ul>');
+			    }
+			    ?>
+			</div>
 			<div class="nav pull-right optional">
 				<ul class="nav navbar-nav">
 					<?php
@@ -15,7 +26,6 @@
 					}
 					?>
 				</ul>
-				<?php include self::$templatePath . "/search.php";?>
 			</div>
 		</div>
 	</div>
@@ -24,25 +34,17 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<div class="nav">
-
-<div class='menu-group'>
-<?php
-     // MAIN NAVIGATION
-     $content = $this->data[ 'sidebar' ];
-     foreach( $content as $menutitle => $items ) {
-     	if ( count( $items ) > 0 && $menutitle != "Suche" && $menutitle != "categorytree-portlet" ) {
-	     	echo '<div class="dropdown" style="position: relative; float:left;">';
-		echo sprintf('<button class="btn btn-menu dropdown-toggle" type="button" data-toggle="dropdown">%s</button>', $menutitle);
-		echo '<ul class="dropdown-menu">';
-		foreach($items as $item) {
-			       echo sprintf('<li><a href="%s">%s</a></li>', $item['href'], $item['text']);
-     		}
-		echo '</ul>';
-		echo '</div>';
-	}
-     }
-?>
-</div>
+			     <div class='menu-group'>
+			     <!-- MAIN NAVIGATION -->
+			     <?php
+			     $content = $this->data[ 'sidebar' ];
+			     unset($content["Suche"]);
+			     unset($content["categorytree-portlet"]);
+			     $this->renderDropdown( $content )
+         		      ?>
+			      </div>
+			      <!-- SEARCH -->
+			      <?php include self::$templatePath . "/search.php";?>
 			</div>
 		</div>
 	</div>

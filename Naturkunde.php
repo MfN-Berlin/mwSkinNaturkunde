@@ -307,32 +307,23 @@ class NaturkundeTemplate extends BaseTemplate {
 	 * @param string $msg
 	 * @param string $hook
 	 */
-	protected function renderDropdown( $name, $content, $msg = null, $hook = null ) {
-		if ( $msg === null ) {
-			$msg = $name;
-		}
-		echo "<div>";
-			$id = Sanitizer::escapeId( "p-$name" );
-			$tooltip = Linker::tooltip( 'p-' . $name );
-			$msgObj = wfMessage( $msg );
-			$title = htmlspecialchars( $msgObj->exists() ? $msgObj->text() : $msg );
-			echo sprintf ( "<h3 class='' data-toggle='dropdown' id='%s' %s >%s</h3>", $id, $tooltip, $title );
-			echo "<ul class='dropdown-menu'>";
-			if ( is_array( $content ) ) {
-			     	foreach( $content as $key => $val ) {
-					 echo $this->makeListItem( $key, $val );
-				}
-
-				if ( $hook !== null ) {
-				   wfRunHooks( $hook, array( &$this, true ) );
-				}
-
-			} else {
-			  echo $content; /* Allow raw HTML block to be defined by extensions */
-			}
-			
-			echo "</ul>";
-		echo "</div>";
+	protected function renderDropdown( $content ) {
+	     	foreach( $content as $menutitle => $items ) {
+     			 if ( count( $items ) > 0 ) {
+			    echo '<div class="dropdown" style="position: relative; float:left;">';
+			    if ($menutitle != "") {
+			        echo sprintf('<button class="btn btn-menu dropdown-toggle" type="button" data-toggle="dropdown">%s</button>', $menutitle);
+			    } else {
+			        echo '<button class="btn btn-menu dropdown-toggle dropdown-caret-only" type="button" data-toggle="dropdown"><span class="caret"></span></button>';
+			    }
+			    echo '<ul class="dropdown-menu">';
+			    foreach($items as $item) {
+			       echo sprintf('<li><a href="%s">%s</a></li>', $item['href'], $item['text']);
+			    }
+			    echo '</ul>';
+			    echo '</div>';
+			 }	      
+     		}
 	}
 
 	/**
