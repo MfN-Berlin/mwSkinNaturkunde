@@ -1409,6 +1409,9 @@ body{
 #bodyContent {
     min-height: 800px;
 }
+.ve-ui-surface #bodyContent {
+    min-height: auto;
+}
 #content a, .tagcloud a, .dropdown-menu a, #footerRow a {
     color: #7da30b;
 }
