@@ -1732,3 +1732,8 @@ input.mw-cookiewarning-dismiss:hover {
 .nonFunctionalProperty + p {
     display: none;
 }
+
+/*Center login form*/
+#userLoginForm {
+    margin-left: calc(50% - 130px);
+}
