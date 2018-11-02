@@ -564,7 +564,7 @@ form {
 #top-large {
     border-bottom: 1px solid rgb(145,189,13);
 }
-.btn-menu {
+.btn-menu, .btn-menu:visited {
     color: black;
     background-color: transparent;
     box-shadow: none;
@@ -577,6 +577,11 @@ form {
 .btn-menu:hover {
     color: rgb(145,189,13)!important;
     border-bottom: 2px solid rgb(145,189,13);
+}
+.btn-single {
+    float:left;
+    padding-top:8px;
+    line-height: 1.5em;
 }
 button {
      color:white;
@@ -672,7 +677,7 @@ line-height: 1.5em;
 
  .menu-group {
      width: auto;
-     margin-left: 300px;
+     margin-left: 230px;
  }
  .nav {
      padding-left: 0;
