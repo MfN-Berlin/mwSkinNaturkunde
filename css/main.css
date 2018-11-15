@@ -1745,6 +1745,6 @@ input.mw-cookiewarning-dismiss:hover {
 }
 
 /*Center login form*/
-#userLoginForm {
-    margin-left: calc(50% - 130px);
+#userloginForm {
+    margin-left: calc(50% - 130px)!important;
 }
