@@ -1235,7 +1235,7 @@ a.btn {
  fieldset{
      border:0;
 }
- legend {
+legend {
      display: block;
      width: 100%;
      padding: 0;
@@ -1245,18 +1245,26 @@ a.btn {
      color: #333333;
      border: 0;
      border-bottom: 1px solid #e5e5e5;
-}
+ }
+ 
 /*Datenschutzbanner*/
  .mw-cookiewarning-container {
+     position: static;
      background-color: rgb(0, 153, 187);
      opacity: 1;
-     padding: 3px 10px 3px;
+     padding: 10px;
+     font-size: 20px;
 }
- .mw-cookiewarning-text span {
+
+.mw-cookiewarning-text {
+     text-align: center;
+}
+
+.mw-cookiewarning-text span {
      display: block;
      margin-bottom: 10pt;
 }
- .mw-cookiewarning-text .mw-cookiewarning-dismiss,.mw-cookiewarning-text a {
+.mw-cookiewarning-text .mw-cookiewarning-dismiss,.mw-cookiewarning-text a {
      background-image: none;
      line-height: 2;
      padding: 5px 10px;
