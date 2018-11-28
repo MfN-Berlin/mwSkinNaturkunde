@@ -11,7 +11,7 @@
                    echo('<li class="tool-btn"><a href="./Intern">Intern</a></li>');
                    echo('<li class="tool-btn"><a href="./Spezial:Spezialseiten">Spezialseiten</a></li>');
                 }
-                echo('<li class="tool-btn"><a href="./FAQ_IKON">FAQ</a></li>');
+                echo('<li class="tool-btn"><a href="./FAQ_'.$GLOBALS[ 'wgSitename' ].'">FAQ</a></li>');
                 echo('</ul>');
                 ?>
             </div>
