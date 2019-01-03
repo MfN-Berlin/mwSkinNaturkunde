@@ -1091,6 +1091,9 @@ line-height: 1.5em;
      text-shadow: none;
      color: black;
 }
+ #top-small div.pull-left {
+     float:left;
+ }
 /*Nav tabs on top of content*/
  ul.nav > li > a {
      color: black;
