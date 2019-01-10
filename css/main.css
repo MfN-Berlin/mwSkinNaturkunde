@@ -683,7 +683,7 @@ line-height: 1.5em;
 
  .menu-group {
      width: auto;
-     margin-left: 230px;
+     margin-left: 300px;
  }
  .nav {
      padding-left: 0;
@@ -1122,46 +1122,52 @@ a.btn {
      text-decoration: none;
 }
 /* Nav menu on the left */
- #widget-area ul.nav-list li a {
+#widget-area ul.nav-list li a {
      border-bottom: 3px solid white ;
 }
- #widget-area ul.nav-list li:hover a, #widget-area ul.nav-list a.CategoryTreeLabel:hover {
+#widget-area ul.nav-list li:hover a, #widget-area ul.nav-list a.CategoryTreeLabel:hover {
      color: black;
      background-color: white;
      border-bottom: 3px solid rgb(125,163,11) ;
 }
 /* Form tab */
 /* Text */
- a, .tagcloud a {
+a, .tagcloud a {
      color: #0099bb;
      text-decoration: none;
 }
- .navbar-inverse .navbar-nav > .active > a {
+.navbar-inverse .navbar-nav > .active > a {
      color: white;
 }
 /*Datenschutzbanner*/
 /* Nutzername */
- #pt-userpage {
+#pt-userpage {
      text-transform:capitalize;
 }
 /* Kommentare */
- #mw-content-text p i {
+#mw-content-text p i {
      font-weight: normal;
      font-style:normal;
      color: blue;
 }
 /* Sammelseiten */
 /*Weiterleitungen*/
- #contentSub {
+#contentSub {
      padding-top: 1em;
      text-align: right;
      padding-bottom: 1em;
 }
-/* Das folgende CSS wird fÃ¼r alle BenutzeroberflÃ¤chen geladen. */
-/*Buttons*/
-/* tabbed pages contents */
-/* no page header in tabbed pages */
- #firstHeading {
+
+/* line above the page title */
+.sup_title {
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* DISPLAYTITLE */
+#firstHeading {
      padding-top: 0em;
      padding-bottom: 0em;
      line-height: 1em;
@@ -1759,3 +1765,4 @@ input.mw-cookiewarning-dismiss:hover {
 #userloginForm {
     margin-left: calc(50% - 130px)!important;
 }
+
