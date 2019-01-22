@@ -1785,12 +1785,18 @@ input.mw-cookiewarning-dismiss:hover {
 }
 
 /* Experimentele Startseite */
+.VIA_Table td {
+    background-color: #ddd;
+    vertical-align: top;
+}
 .homeportlet {
     background-color:#ddd;
     color:black;
-    width: 350px;
+    width: 100%;
     min-height: 350px;
     padding: 5px 20px 20px 20px;
+    color:#666;
+    font-size: normal;
 }
 .homeportlet .Home_element_title {
     color:white;
@@ -1808,6 +1814,9 @@ input.mw-cookiewarning-dismiss:hover {
     padding: 0px;
     padding-bottom: 10px;
     background-color: transparent;
+}
+#mw-content-text .homeportlet .thumb img {
+    max-width: 256px;
 }
 #mw-content-text img {
     padding: 0px!important;
@@ -1863,4 +1872,25 @@ button.ui-datepicker-trigger{
 button.ui-datepicker-trigger img{
    padding:0px;
    content: url(https://www.filecluster.com/media/icons/201960.gif);
+}
+
+/* Schlagworte */
+ul.annotations {
+    list-style-type: none;
+    margin-left: 0px;
+    text-align: center;
+}
+ul.annotations li {
+    display: inline-block;
+    background: #e7e7e7;
+    border-radius: 6px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #888;
+}
+ul.annotations li a {
+    padding: 5px 10px 5px 10px;
+}
+ul.annotations a[href^="http"] {
+    background-image: none;
 }
