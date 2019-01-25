@@ -1789,11 +1789,16 @@ input.mw-cookiewarning-dismiss:hover {
     background-color: #ddd;
     vertical-align: top;
 }
+.VIA_Table td .homeportlet {
+    border-bottom: 2px solid #f0f0f0;
+}
+.VIA_Table td .homeportlet:last-child {
+    border-bottom: none!important;
+}
 .homeportlet {
     background-color:#ddd;
     color:black;
     width: 100%;
-    min-height: 350px;
     padding: 5px 20px 20px 20px;
     color:#666;
     font-size: normal;
@@ -1803,11 +1808,13 @@ input.mw-cookiewarning-dismiss:hover {
     font-size: small;
     text-transform: uppercase;
     margin-bottom: 1em;
+    float: left;
 }
 .homeportlet .Home_element_intro {
     color:#666;
     font-style: italic;
     font-size: small;
+    clear: both;
 }
 .homeportlet .thumb {
     margin: 0px;
@@ -1815,12 +1822,19 @@ input.mw-cookiewarning-dismiss:hover {
     padding-bottom: 10px;
     background-color: transparent;
 }
+.homeportlet .projekt_teaser, .homeportlet .Home_element_text {
+    clear: both;
+}
 #mw-content-text .homeportlet .thumb img {
     max-width: 256px;
 }
 #mw-content-text img {
     padding: 0px!important;
 }
+.homeportlet .element_edit_button {
+    float: right;
+}
+
 /* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
 #inhalt {
     width: 800px;
