@@ -1908,3 +1908,10 @@ ul.annotations li a {
 ul.annotations a[href^="http"] {
     background-image: none;
 }
+.mw-customtoggle .handle {
+    display: inline;
+    margin-right: 0.5em;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
