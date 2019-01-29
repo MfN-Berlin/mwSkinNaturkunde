@@ -93,7 +93,9 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 #searchform span.input-group-btn:hover {
     color: white!important;
 }
-
+.mw-search-result-data {
+    color: #7da30b;
+}
 button::-moz-focus-inner, input::-moz-focus-inner {
      padding: 0;
      border: 0;
@@ -1867,7 +1869,6 @@ input.mw-cookiewarning-dismiss:hover {
 body.rootpage-Hauptseite #firstHeading {
    display:none;
 }
-
 
 /* Ersatzt für Titel Inhaltsverzeichnis*/
 #p-categorytree-portlet {
