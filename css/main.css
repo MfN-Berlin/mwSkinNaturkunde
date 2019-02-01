@@ -187,7 +187,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  a[href^="http"] {
      background-position: right center;
      background-repeat: no-repeat;
-     background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+     /* background-image: linear-gradient(transparent, transparent), url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E');*/
      padding-right: 13px;
  }
  .helpicon {
@@ -549,7 +549,6 @@ form {
      background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.19999999999999996) 0, rgba(156, 156, 156, 0) 60%, rgba(156, 156, 156, 0.19999999999999996) 100%);
      background-repeat: repeat-x;
-     border-color: #d3d7cf;
      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#339c9c9c', GradientType=0);
 }
 .btn:not[(class*='dropdown-caret-only')]:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):hover, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):focus, .btn:not([class*='btn-primary']):not([class*='btn-warning']):not([class*='btn-danger']):not([class*='btn-success']):not([class*='btn-info']):not([class*='btn-link']):active {
@@ -1340,7 +1339,8 @@ legend {
    padding: 0 8px 0 3px;
 }
 .tool-btn a {
-   color: black!important;
+    color: black!important;
+    text-transform: none;
 }
 #sitename a{
     color: white;
@@ -1446,7 +1446,14 @@ body{
 .ve-ui-surface #bodyContent {
     min-height: auto;
 }
-#content a, .tagcloud a, .dropdown-menu a, #footerRow a {
+.tagcloud a, .dropdown-menu a, #footerRow a {
+    color: #7da30b;
+}
+
+#content a {
+    color: black;
+}
+#content a:hover {
     color: #7da30b;
 }
 
@@ -1788,20 +1795,19 @@ input.mw-cookiewarning-dismiss:hover {
 
 /* Experimentele Startseite */
 .VIA_Table td {
-    background-color: #ddd;
     vertical-align: top;
 }
 .VIA_Table td .homeportlet {
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 1em solid #f0f0f0;
 }
 .VIA_Table td .homeportlet:last-child {
     border-bottom: none!important;
 }
 .homeportlet {
-    background-color:#ddd;
+    background-color: white;
     color:black;
     width: 100%;
-    padding: 5px 20px 20px 20px;
+    /* padding: 5px 20px 20px 20px;*/
     color:#666;
     font-size: normal;
 }
@@ -1809,8 +1815,14 @@ input.mw-cookiewarning-dismiss:hover {
     color:white;
     font-size: small;
     text-transform: uppercase;
-    margin-bottom: 1em;
     float: left;
+    font-size: initial;
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px solid rgb(125,163,11);
+    line-height: 2em;
+    width: 100%;
+    padding-left: 1em;
 }
 .homeportlet .Home_element_intro {
     color:#666;
@@ -1821,20 +1833,128 @@ input.mw-cookiewarning-dismiss:hover {
 .homeportlet .thumb {
     margin: 0px;
     padding: 0px;
-    padding-bottom: 10px;
     background-color: transparent;
+    border: none!important;
+    width: 100%;
+}
+.homeportlet .thumb img {
+    width: 100%;
+}
+.homeportlet .thumbinner {
+    width: 100%!important;
+    max-height: 225px;
+    overflow: hidden;
 }
 .homeportlet .projekt_teaser, .homeportlet .Home_element_text {
     clear: both;
+    padding: 0.5em 1em 1em 1em;
+}
+.homeportlet .Home_element_text .img {
+    text-align: center;
+}
+/*arrow startpage element A*/
+.homeportlet .Home_element_text .more {
+    width: 35px;
+    height: 28px;
+    background-image: url("/wiki/skins/naturkunde/Pfeil1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+}
+.homeportlet .Home_element_text .more_inline {
+    width: 22px;
+    height: 22px;
+    background-image: url("/wiki/skins/naturkunde/Pfeil1_bullet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+}
+.homeportlet .Home_element_text .more a{
+    display: block;
 }
 #mw-content-text .homeportlet .thumb img {
-    max-width: 256px;
+/*    max-width: 256px;*/
 }
 #mw-content-text img {
     padding: 0px!important;
 }
 .homeportlet .element_edit_button {
     float: right;
+}
+.Home_element_text .tright {
+    float:none;
+}
+/*inverse*/
+.homeportlet_inverse {
+    background-color: #a1bf24;
+    color: white;
+}
+.homeportlet_inverse a {
+    color: white!important;
+    font-weight: bold;
+}
+.homeportlet_inverse .Home_element_title {
+    color:white;
+    border-bottom: 1px solid white;
+}
+/* Lists startseite */
+.homeportlet ul {
+    color: black;
+}
+.homeportlet ul {
+    list-style-image: url("/wiki/skins/naturkunde/Pfeil1_bullet.png");
+}
+ul.overview, .homeportlet ul ul, li.linked {
+    list-style-image: url("/wiki/skins/naturkunde/Pfeil2_bullet.png");
+}
+/*Tag list on homepage*/
+.homeportlet ul.annotations {
+    list-style-type: none;
+    margin-left: 0px;
+    text-align: center;
+    font-size: small;
+    line-height: 1em;
+    color: #888;
+}
+.homeportlet ul.annotations li {
+    display: inline-block;
+    color: #888;
+    background-color: transparent;
+    margin-right: 5px;
+}
+.homeportlet ul.annotations li a {
+    padding: 0;
+    color: #888!important;
+}
+.homeportlet ul.annotations li a:hover {
+    color: rgb(145,189,13)!important;
+}
+/* peek */
+.peek {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+}
+.peek img {
+    top: calc(-100% - 50px);
+    left: calc(-100% - 50px);
+    position:relative;
+}
+.peekcover {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-image: url("/wiki/skins/naturkunde/peek.png")
+}
+.peekcover a {
+    display: block;
+}
+.peekwrapper {
+    float:left;
+}
+.peekempty {
+    background-color: white;
 }
 
 /* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
@@ -1906,7 +2026,7 @@ ul.annotations li {
 ul.annotations li a {
     padding: 5px 10px 5px 10px;
 }
-ul.annotations a[href^="http"] {
+Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
     background-image: none;
 }
 .mw-customtoggle .handle {
