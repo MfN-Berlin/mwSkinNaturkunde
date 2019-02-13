@@ -54,9 +54,11 @@ img {
      max-width: 800px;
      text-align: center;
 }
- .thumbcaption {
-     margin-left: 15px;
-     font-style: italic;
+.thumbcaption {
+    font-size: 15px;
+    color: #666;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 /*Editorbuttons kein padding*/
  button, input, select {
@@ -229,7 +231,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
      border-bottom: none;
      padding-left: 15px;
 }
- #firstHeading, h1 {
+#firstHeading, h1 {
      padding-top: 8px;
      font-size: 2em;
      line-height: 1.2em;
@@ -237,11 +239,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
      padding-top: 0.5em;
      padding-bottom: 0.17em;
 }
- #firstHeading, h1, h2, h3 {
+#firstHeading, h1, h2, h3 {
      text-align: left;
      line-height: 142% ;
 }
- h2 {
+body.rootpage-Hauptseite #firstHeading {
+    font-weight: normal!important;
+}
+ 
+h2 {
    color: #1a1a1a;
    font-size: 1.2em;
    padding-top: 1em;
@@ -688,7 +694,7 @@ line-height: 1.5em;
 
  .menu-group {
      width: auto;
-     margin-left: 300px;
+     margin-left: 350px;
  }
  .nav {
      padding-left: 0;
@@ -1457,6 +1463,20 @@ body{
     color: #7da30b;
 }
 
+/*Redaktionelle Texte*/
+.ui-tabs-panel h2 {
+    padding-top: 0;
+}
+#content .teaser {
+    font-size: 19px;
+    line-height: 26px;
+    padding-bottom: 1em;
+}
+#content .redaktionell {
+    font-size: 17px;
+    line-height: 24px;
+}
+
 .nav-tabs {
     visibility:hidden;
     border-bottom: 1px solid #fff!important;
@@ -1853,7 +1873,7 @@ input.mw-cookiewarning-dismiss:hover {
     text-align: center;
 }
 /*arrow startpage element A*/
-.homeportlet .Home_element_text .more {
+.more {
     width: 35px;
     height: 28px;
     background-image: url("/wiki/skins/naturkunde/Pfeil1.png");
@@ -1861,7 +1881,7 @@ input.mw-cookiewarning-dismiss:hover {
     background-size: contain;
     float: right;
 }
-.homeportlet .Home_element_text .more_inline {
+.more_inline {
     width: 22px;
     height: 22px;
     background-image: url("/wiki/skins/naturkunde/Pfeil1_bullet.png");
@@ -1869,7 +1889,7 @@ input.mw-cookiewarning-dismiss:hover {
     background-size: contain;
     float: right;
 }
-.homeportlet .Home_element_text .more a{
+.homeportlet .Home_element_text .more a, .homeportlet .Home_element_text .more_inline a{
     display: block;
 }
 #mw-content-text .homeportlet .thumb img {
@@ -1880,6 +1900,7 @@ input.mw-cookiewarning-dismiss:hover {
 }
 .homeportlet .element_edit_button {
     float: right;
+    visibility: hidden;
 }
 .Home_element_text .tright {
     float:none;
@@ -1948,7 +1969,7 @@ ul.overview, .homeportlet ul ul, li.linked {
     background-image: url("/wiki/skins/naturkunde/peek.png")
 }
 .peekcover a {
-    display: block;
+    display: none;
 }
 .peekwrapper {
     float:left;
@@ -1982,11 +2003,6 @@ ul.overview, .homeportlet ul ul, li.linked {
 
 /*Hide watch and unwatch, as email server is not reachable anyway*/
 #ca-watch, #ca-unwatch {
-   display:none;
-}
-
-/* Titel der Hauptseite verbergen, der Titel steht im Scroller. */
-body.rootpage-Hauptseite #firstHeading {
    display:none;
 }
 
