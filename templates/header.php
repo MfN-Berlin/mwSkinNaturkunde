@@ -8,8 +8,8 @@
                 echo('<ul class="nav navbar-nav">');
                 // INTERN und SPEZIALSEITEN
                 if ( $this->data[ 'loggedin' ] ) { # Only render Tools if Logged in
-                   echo('<li class="tool-btn"><a href="./Intern">Intern</a></li>');
-                   echo('<li class="tool-btn"><a href="./Spezial:Spezialseiten">Spezialseiten</a></li>');
+                   echo('<li class="tool-btn"><a href="/wiki/Intern">Intern</a></li>');
+                   echo('<li class="tool-btn"><a href="/wiki/Spezial:Spezialseiten">Spezialseiten</a></li>');
                 }
                 echo('<li class="tool-btn"><a href="./FAQ_'.$GLOBALS[ 'wgSitename' ].'">FAQ</a></li>');
                 echo('</ul>');
