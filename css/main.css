@@ -2052,3 +2052,7 @@ Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
     font-size: large;
     font-weight: bold;
 }
+/*Suchoptionen*/
+#mw-searchoptions {
+    display:none;
+}
