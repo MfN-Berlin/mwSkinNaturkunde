@@ -1889,7 +1889,15 @@ input.mw-cookiewarning-dismiss:hover {
     background-size: contain;
     float: right;
 }
-.homeportlet .Home_element_text .more a, .homeportlet .Home_element_text .more_inline a{
+.homeportlet_inverse .more_inline {
+    width: 22px;
+    height: 22px;
+    background-image: url("/wiki/skins/naturkunde/Pfeil1_bullet_inverse.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+}
+.more a, .homeportlet .Home_element_text .more_inline a{
     display: block;
 }
 #mw-content-text .homeportlet .thumb img {
