@@ -2064,3 +2064,12 @@ Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
 #mw-searchoptions {
     display:none;
 }
+/*Pflichtfeld*/
+.required {
+    font-size: 0.7em;
+    font-weight: normal;
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 0 5px 0 5px;
+}
