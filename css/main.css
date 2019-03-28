@@ -2073,3 +2073,8 @@ Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
     color: white;
     padding: 0 5px 0 5px;
 }
+
+/* Main image in text area  */
+.floatright a.image {
+    margin: 10px;
+}
