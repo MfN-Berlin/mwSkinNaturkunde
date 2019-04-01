@@ -110,7 +110,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .ve-ui-surface {
     background: white !important;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
-    border-radius: 3px;    
+    border-radius: 3px;
 }
 
 /* Visual Editor save button*/
@@ -195,7 +195,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  .helpicon {
      white-space:nowrap;
  }
- 
+
 /*Externe Links in der Navigationsleite kein Icon*/
  img {
      vertical-align: middle;
@@ -246,7 +246,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 body.rootpage-Hauptseite #firstHeading {
     font-weight: normal!important;
 }
- 
+
 h2 {
    color: #1a1a1a;
    font-size: 1.2em;
@@ -681,7 +681,7 @@ line-height: 1.5em;
     color: black;
 }
 .dropdown-caret-only:hover{
-    background-color: rgb(125,163,11);    
+    background-color: rgb(125,163,11);
     border-bottom: none;
 }
 .pull-right > .dropdown-menu {
@@ -766,7 +766,7 @@ line-height: 1.5em;
      background-color: #ffffff;
      border-radius: 2px;
  }
- 
+
  /*Now we have 2 navbars directly under each other*/
  .navbar:last-of-type {
      margin-bottom: 20px;
@@ -1250,7 +1250,7 @@ a, .tagcloud a {
  form.createbox input[type="submit"]:hover, form.createbox input[type="button"]:hover, input[type="submit"]:hover, button.mw-ui-button:hover {
 														       background-color: rgb(125,163,11)!important;
 														       color: white!important;
-														       
+
 }
  fieldset{
      border:0;
@@ -1266,7 +1266,7 @@ legend {
      border: 0;
      border-bottom: 1px solid #e5e5e5;
  }
- 
+
 /*Datenschutzbanner*/
  .mw-cookiewarning-container {
      position: static;
@@ -1303,10 +1303,10 @@ legend {
  .metadata th{
      width:65%;
 }
- 
+
 /***********************************************************************************
 *
-* Fuer Natur Design  
+* Fuer Natur Design
 *
 ************************************************************************************/
 .navbar-nav {
@@ -1784,7 +1784,7 @@ input.mw-cookiewarning-dismiss:hover {
    background-repeat: no-repeat;
    background-position-y: center;
    display: inline-block;
-   width: 100px;   
+   width: 100px;
 }
 .functionalProperty {
     margin-left: 1em;
@@ -1937,7 +1937,7 @@ ul.overview, .homeportlet ul ul, li.linked {
     list-style-image: url("/wiki/skins/naturkunde/Pfeil2_bullet.png");
 }
 /*Tag list on homepage*/
-.homeportlet ul.annotations {
+ul.annotations {
     list-style-type: none;
     margin-left: 0px;
     text-align: center;
@@ -1945,17 +1945,18 @@ ul.overview, .homeportlet ul ul, li.linked {
     line-height: 1em;
     color: #888;
 }
-.homeportlet ul.annotations li {
+ul.annotations li {
     display: inline-block;
     color: #888;
     background-color: transparent;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
-.homeportlet ul.annotations li a {
+ul.annotations li a {
     padding: 0;
     color: #888!important;
 }
-.homeportlet ul.annotations li a:hover {
+ul.annotations li a:hover {
     color: rgb(145,189,13)!important;
 }
 /* peek */
@@ -2034,22 +2035,7 @@ button.ui-datepicker-trigger img{
 }
 
 /* Schlagworte */
-ul.annotations {
-    list-style-type: none;
-    margin-left: 0px;
-    text-align: center;
-}
-ul.annotations li {
-    display: inline-block;
-    background: #e7e7e7;
-    border-radius: 6px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: #888;
-}
-ul.annotations li a {
-    padding: 5px 10px 5px 10px;
-}
+
 Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
     background-image: none;
 }
