@@ -642,7 +642,6 @@ button:active {
 .dropdown-menu {
      position: absolute;
      top: 100%;
-     left: -180px;
      z-index: 1000;
      display: none;
      float: left;
@@ -657,13 +656,16 @@ button:active {
      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
      background-clip: padding-box;
-font-size: 18px;
-color: #666 !important;
-font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-white-space: nowrap;
-color: #666 !important;
-font-weight: 300;
-line-height: 1.5em;
+     font-size: 18px;
+     color: #666 !important;
+     font-family: "Trade Gothic Next LT", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+     white-space: nowrap;
+     color: #666 !important;
+     font-weight: 300;
+     line-height: 1.5em;
+}
+#searchform .dropdown-menu {
+     left: -180px;
 }
 .dropdown-menu > li > a {
      display: block;
