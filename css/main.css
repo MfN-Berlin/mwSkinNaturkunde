@@ -1989,7 +1989,6 @@ ul.annotations li a:hover {
     background-color: white;
 }
 
-/* Das folgende CSS wird für alle Benutzeroberflächen geladen. */
 #inhalt {
     width: 800px;
     height: 537px;
@@ -2066,3 +2065,80 @@ Home_element_text a[href^="http"], ul.annotations a[href^="http"] {
 .floatright a.image {
     margin: 10px;
 }
+
+body.rootpage-Hauptseite .catlinks {
+    display:none;
+}
+body.rootpage-Hauptseite .page-actions {
+    display:none;
+}
+/* line above the page title */
+.sup_title {
+    top: 40px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* Portlet */
+.portlet .content .portlet .header {
+    background-color: transparent!important;
+    color: #666;
+}
+
+#inhalt {
+    width: 800px;
+    height: 537px;
+    background-color: rgb(125,163,11);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.textcontainer {
+    color: white;
+}
+
+/*Disable link to user page, as users cannot create pages #290*/
+#pt-userpage {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+#pt-userpage a{
+  color: white!important;
+}
+
+/*Hide watch and unwatch, as email server is not reachable anyway*/
+#ca-watch, #ca-unwatch {
+   display:none;
+}
+
+/* Titel der Hauptseite */
+body.rootpage-Hauptseite #firstHeading {
+   display:block!important;
+}
+body.rootpage-Hauptseite #contentSub {
+   display:none;
+}
+
+/* Ersatzt für Titel Inhaltsverzeichnis*/
+#p-categorytree-portlet {
+   visibility:hidden;
+}
+#p-categorytree-portlet:after {
+   content:'Intern';
+   visibility:visible;
+   display:block;
+   margin-top: -1em;
+}
+
+button.ui-datepicker-trigger{
+   padding:0px;
+}
+button.ui-datepicker-trigger img{
+   padding:0px;
+   content: url(https://www.filecluster.com/media/icons/201960.gif);
+}
+/*Keine Nummerierung im Inhaltsverzeichnis*/
+.tocnumber { display: none; }
+
