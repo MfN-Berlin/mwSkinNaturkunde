@@ -67,7 +67,7 @@ class SkinNaturkunde extends SkinTemplate {
 				<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->'
 		);
-		$out->addModuleScripts( 'skins.neverland' );
+//		$out->addModuleScripts( 'skins.neverland' );
 	}
 	
 	/**
@@ -322,7 +322,7 @@ class NaturkundeTemplate extends BaseTemplate {
 				}
 
 				if ( $hook !== null ) {
-					wfRunHooks( $hook, array( &$this, true ) );
+					Hooks::run( $hook, array( &$this, true ) );
 				}
 
 			} else {
